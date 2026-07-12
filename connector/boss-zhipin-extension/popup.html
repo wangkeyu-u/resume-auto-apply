@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <style>
+    body { font-family: -apple-system, "PingFang SC", Arial, sans-serif; width: 320px; margin: 0; padding: 14px; color: #1f2937; }
+    h1 { font-size: 15px; margin: 0 0 4px; }
+    .status { font-size: 12px; margin-bottom: 10px; }
+    .status.online { color: #16a34a; } .status.offline { color: #dc2626; }
+    .box { border: 1px solid #e5e7eb; border-radius: 8px; padding: 10px; margin-bottom: 10px; }
+    .box h2 { font-size: 12px; margin: 0 0 6px; color: #6b7280; }
+    label { font-size: 11px; color: #6b7280; display: block; margin: 6px 0 2px; }
+    input { width: 100%; box-sizing: border-box; padding: 6px; border: 1px solid #d1d5db; border-radius: 6px; font-size: 12px; }
+    button { width: 100%; padding: 9px; margin-top: 6px; border: none; border-radius: 8px; background: #2563eb; color: #fff; font-size: 13px; cursor: pointer; }
+    button.ghost { background: #f3f4f6; color: #374151; }
+    button:active { transform: translateY(1px); }
+    .msg { font-size: 12px; margin-top: 8px; line-height: 1.5; min-height: 16px; }
+    .msg.ok { color: #16a34a; } .msg.err { color: #dc2626; }
+    .note { font-size: 11px; color: #9ca3af; margin-top: 10px; line-height: 1.5; }
+  </style>
+</head>
+<body>
+  <h1>简历助手 · 自动投递桥接</h1>
+  <div id="status" class="status">连接状态：检测中…</div>
+
+  <div class="box">
+    <h2>连接配置（默认免改）</h2>
+    <label>助手地址</label>
+    <input id="apiBase" value="http://127.0.0.1:8011" />
+    <label>API Token（可选）</label>
+    <input id="apiToken" placeholder="本地默认留空" />
+    <button class="ghost" id="saveCfg">保存配置</button>
+  </div>
+
+  <div class="box">
+    <h2>一键操作</h2>
+    <button id="scrape">① 抓取本页职位</button>
+    <button id="fill">② 填入定制简历（在投递页点）</button>
+    <button id="adopt">③ 采纳回复并填入（在BOSS聊天页点）</button>
+  </div>
+
+  <div id="msg" class="msg"></div>
+  <div class="note">所有发送/提交都需你本人在招聘网站点击确认，扩展只负责读取与填空，绝不做无人值守冒充。</div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

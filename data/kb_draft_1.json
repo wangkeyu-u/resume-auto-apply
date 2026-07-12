@@ -1,0 +1,316 @@
+[
+  {
+    "role": "backend",
+    "label": "后端开发工程师",
+    "aliases": ["后端", "后端开发", "服务端"],
+    "must_have": [
+      "扎实的 Java/Go/Python 等至少一门后端语言基础，理解 JVM 原理、并发编程、IO 模型与线程模型",
+      "精通至少一种主流 Web 框架（Spring Boot / Spring Cloud / Gin / FastAPI / Django 等）及其核心原理",
+      "熟练使用 MySQL 等关系型数据库，掌握 SQL 优化、索引设计、事务与分库分表/读写分离",
+      "熟悉 Redis 缓存设计与优化，了解 Kafka / RabbitMQ / RocketMQ 等消息队列的应用场景",
+      "掌握分布式系统基础：服务注册发现、负载均衡、熔断降级、分布式事务、链路追踪",
+      "熟悉 Linux 环境开发与部署，掌握 Git、Docker 容器化及基本 CI/CD 流程",
+      "具备高并发、高可用、高性能系统的设计与问题排查能力"
+    ],
+    "nice_to_have": [
+      "有云原生经验：Kubernetes / Istio / 服务网格落地",
+      "熟悉 Elasticsearch、ClickHouse、MongoDB 等 NoSQL / OLAP 技术",
+      "具备 AI 工具辅助编程经验（Cursor / Copilot / Codex）",
+      "有向量数据库（Milvus / Chroma / Weaviate）或 RAG / 大模型集成经验",
+      "熟悉 DDD 领域驱动设计、设计模式与中大型系统重构经验"
+    ],
+    "keywords": [
+      "spring boot", "spring cloud", "mysql", "redis", "kafka", "docker",
+      "microservices", "distributed", "high concurrency", "mybatis", "restful api",
+      "kubernetes", "gRPC"
+    ],
+    "responsibilities": [
+      "负责核心业务系统的设计与开发，保障系统稳定性、可扩展性与高可用",
+      "参与微服务架构下模块开发与接口设计，优化数据库性能并解决线上技术难题",
+      "与前端、测试、算法团队紧密协作，推动需求高质量交付与系统持续调优"
+    ],
+    "soft_skills": [
+      "良好的逻辑思维与独立问题定位解决能力",
+      "跨团队沟通协作与需求抽象能力"
+    ],
+    "salary_band": "15k-40k/月（一线，3-8年经验）"
+  },
+  {
+    "role": "java",
+    "label": "Java 开发工程师",
+    "aliases": ["Java后端", "Java开发"],
+    "must_have": [
+      "精通 Java 8+ 核心特性（Lambda、Stream API、并发包），扎实的 Java 编程基础",
+      "深入理解 JVM 原理：内存模型、垃圾回收机制与性能调优",
+      "精通 Spring Boot / Spring Cloud / Spring MVC / MyBatis 等主流框架及核心原理",
+      "熟练使用 MySQL，掌握 SQL 优化、索引设计、复杂查询与分库分表/读写分离",
+      "熟悉 Redis 缓存、RabbitMQ / Kafka 等消息中间件，掌握 Docker / K8s 容器化部署",
+      "理解分布式系统原理，具备微服务架构开发经验（服务注册发现、熔断降级、分布式事务）",
+      "熟悉 Linux 环境与基本运维，掌握 Git、CI/CD 流程"
+    ],
+    "nice_to_have": [
+      "熟悉 Dubbo、RocketMQ、Nacos、Sentinel、Seata 等阿里系微服务生态",
+      "掌握 Elasticsearch、ClickHouse、MongoDB 等 NoSQL / OLAP 存储",
+      "有 AI 编程工具（Cursor / Copilot）或大模型集成 / RAG 经验",
+      "熟悉 DDD 领域驱动设计、设计模式与大型高并发系统设计",
+      "具备 Python 等多语言能力或大数据平台（Flink / Spark）对接经验"
+    ],
+    "keywords": [
+      "java", "spring boot", "spring cloud", "mybatis", "jvm", "mysql",
+      "redis", "kafka", "dubbo", "microservices", "distributed transaction", "docker"
+    ],
+    "responsibilities": [
+      "负责 Java 后端服务与微服务模块的设计、开发与维护，保障高可用与扩展性",
+      "使用 Nacos / MyBatis-Plus / ClickHouse 等进行服务治理、持久层与数据存储优化",
+      "参与高并发、高负载系统的性能调优与稳定性建设，配合业务/算法团队交付"
+    ],
+    "soft_skills": [
+      "良好的业务理解与技术抽象能力",
+      "独立定位线上问题、推动技术方案落地的责任心"
+    ],
+    "salary_band": "15k-50k/月（一线，含大厂与资深岗）"
+  },
+  {
+    "role": "python",
+    "label": "Python 开发工程师",
+    "aliases": ["Python后端", "Python开发"],
+    "must_have": [
+      "熟练 Python 3.x，掌握类型注解、异步编程（asyncio）、面向对象与常用设计模式",
+      "至少精通一种 Web 框架（FastAPI / Django / Flask），了解中间件、认证鉴权与限流安全加固",
+      "熟悉 SQLAlchemy / Django ORM，掌握事务、索引、查询计划与 MySQL/PostgreSQL 优化",
+      "熟练使用 Redis 缓存与 Kafka / RabbitMQ 消息队列",
+      "熟悉 Linux / Git / Docker，了解 CI/CD（GitHub Actions / GitLab CI / Jenkins）与云原生概念",
+      "具备工程素养：代码规范（flake8 / ruff / black / isort）、pytest 测试优先、文档意识"
+    ],
+    "nice_to_have": [
+      "有大模型和 Agent 开发经验，熟悉 LangChain / LlamaIndex、RAG 与向量数据库（Milvus）",
+      "熟悉 Elasticsearch、MongoDB、Celery、gRPC 等技术",
+      "有云计算（AWS / 阿里云 / 腾讯云）与服务部署经验",
+      "前端技术（React / Vue）或全栈开发经验",
+      "开源项目贡献或技术社区活跃"
+    ],
+    "keywords": [
+      "python", "fastapi", "django", "flask", "asyncio", "sqlalchemy",
+      "mysql", "postgresql", "redis", "kafka", "docker", "pytest", "microservices"
+    ],
+    "responsibilities": [
+      "负责 Python 后端服务的需求分析、设计与实现，交付高质量可维护代码",
+      "基于 FastAPI/Django 设计 REST/gRPC 接口，完善 Swagger/OpenAPI 文档与数据库建模优化",
+      "建立工程化体系（单元/集成测试、监控告警、灰度发布），与产品/前端/算法团队协作落地"
+    ],
+    "soft_skills": [
+      "良好的团队协作与产品沟通能力",
+      "快速排查线上问题、持续学习行业新技术的热情"
+    ],
+    "salary_band": "12k-30k/月（一线，2-8年经验）"
+  },
+  {
+    "role": "golang",
+    "label": "Go 开发工程师",
+    "aliases": ["Go", "Go语言", "Golang"],
+    "must_have": [
+      "精通 Go 语言，深入理解内存管理、逃逸分析/GC 调优、泛型（Go 1.18+）与错误处理",
+      "精通多协程并发编程，熟悉 goroutine / channel 机制与并发任务调度、资源管理",
+      "熟练使用 Gin / Echo 等 Web 框架，掌握 gRPC / Protobuf、RESTful API 设计",
+      "熟悉 MySQL / Redis 等数据库，能编写高效 SQL 并解决慢查询与缓存问题",
+      "理解分布式系统设计，具备微服务架构实践经验（服务注册发现、配置中心）",
+      "熟悉 Kafka / RocketMQ / NATS 等消息队列，掌握 Docker / Kubernetes 与 CI/CD 流程",
+      "熟悉性能分析工具（pprof）、性能调优与线上故障排查"
+    ],
+    "nice_to_have": [
+      "熟悉 etcd、TiDB / CockroachDB、分布式 SQL 与分布式事务（TCC/Saga）",
+      "了解服务网格（Service Mesh）、Istio 与云原生技术趋势",
+      "有高并发系统优化经验（QPS 优化、连接池 sqlx/pgx 调优）",
+      "熟悉 DDD 领域驱动设计的微服务拆分",
+      "参与开源项目或有技术博客输出"
+    ],
+    "keywords": [
+      "golang", "gin", "grpc", "goroutine", "channel", "kubernetes",
+      "microservices", "kafka", "mysql", "redis", "docker", "high concurrency"
+    ],
+    "responsibilities": [
+      "负责 Golang 后端微服务架构设计与核心功能开发，实现高性能 API 与服务间通信",
+      "优化系统性能，保障高并发场景下的稳定性与可用性，参与技术方案制定与代码评审",
+      "跟踪云原生技术趋势，推动技术栈持续优化与容器化交付"
+    ],
+    "soft_skills": [
+      "良好的代码规范意识与团队协作能力",
+      "独立处理线上复杂问题、推动技术落地"
+    ],
+    "salary_band": "15k-35k/月（一线，1-8年经验）"
+  },
+  {
+    "role": "cpp",
+    "label": "C++ 开发工程师",
+    "aliases": ["C++", "CPP", "后台C++"],
+    "must_have": [
+      "精通 C++11 及以上标准，熟悉模板编程、智能指针、多线程、异步编程与性能调优",
+      "深入理解 Linux 操作系统原理、TCP/IP 协议、HTTP/2、内存模型与锁机制",
+      "熟悉 Linux 下 C/C++ 后台服务开发，具备高并发、低延迟系统设计能力",
+      "熟悉 gRPC / BRPC 等 RPC 框架、Kafka 消息队列、Redis 缓存等中间件",
+      "熟练运用性能分析工具（perf / pprof / FlameGraph）定位 CPU/内存/网络瓶颈",
+      "理解分布式系统设计理念，具备微服务治理经验（服务发现、熔断降级、分布式追踪）者优先"
+    ],
+    "nice_to_have": [
+      "熟悉底层 IO 技术：SPDK、io_uring、RDMA、NVMe 等存储加速技术",
+      "有 Ceph / HDFS / GFS / GlusterFS / Lustre 等分布式存储系统研发经验",
+      "了解 Raft / Paxos 等共识协议与分布式一致性",
+      "熟悉 Redis / LevelDB / InnoDB 等存储引擎原理",
+      "了解 eBPF 等内核观测技术用于性能调优"
+    ],
+    "keywords": [
+      "c++", "linux", "multithreading", "grpc", "brpc", "high concurrency",
+      "distributed storage", "tcp/ip", "performance tuning", "kafka", "redis"
+    ],
+    "responsibilities": [
+      "负责高并发、低延迟核心后端服务的设计、开发与维护（如广告/搜索/推荐/存储系统）",
+      "牵头关键技术攻坚，持续系统性能优化，解决海量请求下的吞吐、延迟与稳定性问题",
+      "搭建高可用分布式架构，实现负载均衡、故障自动转移与弹性扩缩容"
+    ],
+    "soft_skills": [
+      "复杂系统性能问题的拆解与攻关能力",
+      "责任心与跨团队协作推动落地"
+    ],
+    "salary_band": "20k-50k/月（一线，大厂后台/存储方向）"
+  },
+  {
+    "role": "microservices",
+    "label": "微服务架构师",
+    "aliases": ["微服务", "架构师", "服务架构"],
+    "must_have": [
+      "8-10 年以上后端/架构经验，3 年以上微服务架构主导经验，有大型系统重构或从 0-1 落地经验",
+      "精通 Java/Spring Boot/Spring Cloud 或 Go 生态，熟悉服务治理与 API 网关体系",
+      "掌握分布式系统设计：分库分表、分布式事务（Seata / 最终一致性）、消息驱动（Kafka/RocketMQ）",
+      "具备 DDD 领域建模、服务拆分、技术选型与架构蓝图设计能力",
+      "熟悉消息、缓存、检索与 OLAP：Kafka、Redis、Elasticsearch、ClickHouse 等",
+      "建立高可用与可观测性体系：熔断限流、降级、灰度/蓝绿发布、链路追踪（SkyWalking/Zipkin）、日志与指标",
+      "精通云原生技术栈（Docker/K8s/Service Mesh），主导过传统架构向云原生转型"
+    ],
+    "nice_to_have": [
+      "熟悉 Istio / Linkerd 服务网格、Nacos / Consul / Zookeeper 注册治理",
+      "具备大数据流处理经验（Flink / Spark / Kafka Streams）",
+      "有流程引擎、决策引擎、模型服务、特征平台、知识图谱建设经验",
+      "持有 AWS/阿里云专家架构师认证或 TOGAF 认证、行业技术标准/专利",
+      "熟悉 Serverless、中台化、混沌工程等前沿架构理念"
+    ],
+    "keywords": [
+      "microservices", "spring cloud", "ddd", "distributed transaction", "service mesh",
+      "kubernetes", "istio", "high availability", "observability", "api gateway", "seata"
+    ],
+    "responsibilities": [
+      "负责系统整体架构设计与路线规划：服务拆分、领域建模、技术选型与标准制定",
+      "建立高可用、可观测与微服务治理体系（注册发现、配置中心、API 网关、容灾）",
+      "指导团队落地架构蓝图、编码规范与性能/成本优化，组织评审与技术培训"
+    ],
+    "soft_skills": [
+      "优秀的跨团队沟通与推动力（业务/研发/平台/运维达成共识）",
+      "技术领导力与架构前瞻性视野"
+    ],
+    "salary_band": "35k-70k/月（一线，资深/专家岗，常含 16 薪）"
+  },
+  {
+    "role": "devops",
+    "label": "DevOps / SRE 工程师",
+    "aliases": ["SRE", "运维开发", "平台工程"],
+    "must_have": [
+      "精通 Linux 系统管理与 TCP/IP 协议，具备系统调优与资源治理能力",
+      "精通 Kubernetes 架构，熟悉 Helm/Kustomize、Istio、CRI/CNI 等核心组件",
+      "熟练搭建可观测性体系：Prometheus/Grafana/Alertmanager、ELK/OpenSearch、OpenTelemetry、APM/链路追踪",
+      "独立维护 CI/CD 流水线（Jenkins / GitLab CI / Argo CD / Tekton）与制品库（Harbor/Nexus）",
+      "至少掌握一门编程语言（Go/Python/Bash）进行工具开发与自动化脚本",
+      "熟悉云平台（AWS/阿里云/腾讯云）核心组件：IAM、VPC、安全组、容器服务（ACK/EKS）",
+      "定义并跟踪 SLI/SLO，建立告警策略、值班机制与故障应急响应复盘"
+    ],
+    "nice_to_have": [
+      "熟悉基础设施即代码（Terraform / Ansible）与 GitOps 实践",
+      "具备多地域容灾、混沌工程与稳定性治理量化案例（如发布耗时 -30%）",
+      "了解 MLOps、AI Agent 架构或后端开发背景",
+      "持有 CKA/CKAD 认证，熟悉 Falco 等运行时安全与云原生安全体系",
+      "有 ClickHouse / Elasticsearch / Kafka 等大数据或日志链路运维经验"
+    ],
+    "keywords": [
+      "kubernetes", "prometheus", "grafana", "ci/cd", "devops", "sre",
+      "docker", "helm", "observability", "terraform", "linux", "gitops"
+    ],
+    "responsibilities": [
+      "建设可观测性与稳定性体系（监控/日志/链路追踪），设计并落地 SLI/SLO 与告警值班",
+      "搭建与维护 CI/CD 流水线与容器平台，支撑蓝绿/灰度/金丝雀发布与多区域容灾",
+      "通过自动化脚本与平台化工具提升发布与排障效率，推动 FinOps 降本增效"
+    ],
+    "soft_skills": [
+      "压力下快速定位并闭环问题的能力",
+      "跨团队沟通推动力与良好文档沉淀习惯"
+    ],
+    "salary_band": "15k-60k/月（一线，中级至专家）"
+  },
+  {
+    "role": "dba",
+    "label": "数据库工程师 / DBA",
+    "aliases": ["数据库", "DBA", "数据治理"],
+    "must_have": [
+      "3-5 年以上 DBA 经验，精通 MySQL（InnoDB）/ PostgreSQL 生产运维与核心原理",
+      "深入理解事务、锁、MVCC、WAL、Cost-based Optimizer、并行查询、分区表等原理与调优",
+      "掌握主从复制、逻辑/物理复制、高可用方案（MGR / Patroni / PgBouncer / Orchestrator）",
+      "精通 SQL 调优、索引优化、执行计划分析，能解决亿级数据表与高并发访问性能问题",
+      "熟悉数据库备份恢复（mysqldump / Xtrabackup / RMAN）与容灾、数据安全方案",
+      "熟悉 Redis 数据结构、持久化、哨兵与集群模式，了解 MongoDB / etcd 等 NoSQL",
+      "熟悉 Linux，能使用 Shell/Python/Go 编写自动化运维脚本，具备快速故障定位能力"
+    ],
+    "nice_to_have": [
+      "具备云数据库运维经验（AWS RDS / 阿里云 RDS / Azure Database）",
+      "有数据库安全治理经验：权限、脱敏、加密、审计、合规",
+      "持有 OCP / PGCA / ITIL 等认证",
+      "推动数据库 DevOps（IaC / CI/CD / 平台化自动化运维）",
+      "熟悉大数据量分库分表、数据归档与冷热分离存储"
+    ],
+    "keywords": [
+      "mysql", "postgresql", "innodb", "redis", "sql tuning", "backup recovery",
+      "high availability", "replication", "mongodb", "linux", "database optimization"
+    ],
+    "responsibilities": [
+      "负责 MySQL/PostgreSQL 生产集群的架构设计、容量规划、部署、升级与迁移",
+      "制定并落地高可用、备份、容灾、监控、性能调优与 SQL 审计等体系化方案",
+      "主导重大故障应急响应，推进数据库自动化运维与数据安全/合规治理"
+    ],
+    "soft_skills": [
+      "良好的跨团队技术沟通与 SQL 代码审核能力",
+      "强烈责任心与 7x24 线上保障意识"
+    ],
+    "salary_band": "15k-40k/月（一线，3-8年经验）"
+  },
+  {
+    "role": "cloudnative",
+    "label": "云原生工程师",
+    "aliases": ["云原生", "容器", "K8s", "容器化"],
+    "must_have": [
+      "精通 Kubernetes 架构与生态（Etcd / Calico / Istio / Volcano），具备千节点级集群调优经验",
+      "深入理解 Docker Engine、Containerd、CRI/CSI/CNI，能开发自定义 Operator/Controller",
+      "熟练使用 Go / Python 进行运维开发，编写自动化工具、监控告警脚本与自定义组件",
+      "熟悉 Service Mesh（Istio）及其周边（Kiali / Prometheus / Jaeger / ELK / Grafana）",
+      "精通可观测性工具链：Prometheus / Grafana / ELK / OpenTelemetry，并能独立调优",
+      "熟悉 DevOps / GitOps 流程（Tekton / Argo CD / GitLab CI）与云原生产品（ACK/EKS）",
+      "具备云原生安全防护能力：镜像扫描、RBAC、网络策略、运行时安全（Falco）"
+    ],
+    "nice_to_have": [
+      "有 eBPF 可观测开发经验（perf / ftrace / 网络全链路追踪 / 持续 profiling）",
+      "熟悉 K8s GPU/NPU 调度（vgpu / device-plugin）、多集群/多云/混合云管理",
+      "了解 WASM、Envoy 扩展（lua/wasm filter）或 Service Mesh 二次开发",
+      "有开源社区贡献、阅读云原生组件源码经验",
+      "熟悉缓存网格（Cache Mesh）/ 数据网格（DB Mesh）/ 消息网格（Message Mesh）泛网格化"
+    ],
+    "keywords": [
+      "kubernetes", "docker", "istio", "service mesh", "cloud native", "operator",
+      "prometheus", "helm", "ebpf", "gitops", "containerd", "observability"
+    ],
+    "responsibilities": [
+      "负责基于 Kubernetes / Istio 的容器平台与 Service Mesh 架构设计、技术攻关与线上维护",
+      "建设千节点级集群的稳定性保障、性能调优（APIServer 负载、etcd 压力、调度优化）",
+      "推动云原生泛网格化 PaaS 平台落地与可观测/安全体系建设，培养团队成员成长"
+    ],
+    "soft_skills": [
+      "较强的自我驱动能力与跨团队沟通协作",
+      "结果导向，能高效定位并解决线上复杂问题"
+    ],
+    "salary_band": "20k-60k/月（一线，资深/专家岗）"
+  }
+]

@@ -1,0 +1,432 @@
+[
+  {
+    "role": "algorithm",
+    "label": "算法工程师",
+    "aliases": ["算法", "算法岗", "AI算法", "算法开发"],
+    "must_have": [
+      "扎实的机器学习/深度学习理论基础（LR、GBDT、FM、Embedding、Attention、Transformer等）",
+      "精通 Python，熟悉 C++/Java 至少一门系统级语言，代码功底与数据结构扎实",
+      "熟练使用 PyTorch/TensorFlow 至少一种深度学习框架，能独立复现论文并落地模型",
+      "熟悉大数据处理工具（Spark/Flink/Hadoop/Hive）与 Linux 开发环境",
+      "具备端到端建模能力：数据清洗、特征工程、模型训练、调优与上线部署",
+      "数学基础扎实（线性代数、概率统计、最优化方法）",
+      "有大规模（亿级样本/大流量）场景模型落地经验",
+      "良好的英文文献阅读与 paper 复现能力"
+    ],
+    "nice_to_have": [
+      "顶会论文（ICML/ICLR/NeurIPS/CVPR/ACL 等）或竞赛获奖（Kaggle、ACM-ICPC）",
+      "开源项目贡献或自研算法框架经验",
+      "大模型（LLM）预训练/微调经验（LoRA、SFT、RLHF 等）",
+      "跨行业背景（金融、医疗、电商）与业务理解",
+      "模型工程化能力（量化、蒸馏、推理加速、FastAPI/Flask 部署、VLLM）"
+    ],
+    "keywords": [
+      "Python",
+      "PyTorch",
+      "TensorFlow",
+      "Transformer",
+      "特征工程",
+      "深度学习",
+      "Spark",
+      "机器学习",
+      "模型部署",
+      "分布式训练",
+      "GBDT/XGBoost",
+      "算法优化"
+    ],
+    "responsibilities": [
+      "负责业务场景下的算法模型研发、训练、调优与效果优化，直接驱动业务指标（CTR/CVR/留存等）提升",
+      "对接数据工程、前后端与产品团队，完成算法从离线实验到线上服务的全流程落地",
+      "跟踪业界前沿技术（大模型、多模态、强化学习等）并探索业务应用",
+      "沉淀方法论与技术规范，输出专利/论文/技术文档"
+    ],
+    "soft_skills": [
+      "强逻辑思维与复杂问题拆解能力",
+      "跨团队沟通协作与项目主导能力",
+      "快速学习与业务分析能力"
+    ],
+    "salary_band": "25k-60k/月（一线，资深可达 50-100万/年）"
+  },
+  {
+    "role": "llm",
+    "label": "大模型算法工程师",
+    "aliases": ["大模型", "LLM", "AIGC算法", "预训练", "微调", "大模型应用"],
+    "must_have": [
+      "深入理解 Transformer 架构及主流 LLM（GPT/LLaMA/DeepSeek/Qwen/GLM/Baichuan 等）训练与微调原理",
+      "掌握后训练核心算法：CPT、SFT、DPO、PPO、GRPO、RLHF 等",
+      "熟悉微调方法：全参数微调、LoRA、QLoRA、P-Tuning 等",
+      "熟练使用 PyTorch、HuggingFace Transformers、DeepSpeed、FSDP 等训练工具",
+      "掌握分布式训练与显存优化：ZeRO/Offload、Flash Attention、混合精度、激活重计算",
+      "具备大模型工程化能力：量化、蒸馏、推理加速（vLLM、TensorRT-LLM、Triton）与容器化部署（Docker/K8s）",
+      "有百亿级参数模型预训练/后训练实战经验",
+      "熟悉 RAG 技术栈（LangChain、LlamaIndex）与 Agent 系统设计与优化"
+    ],
+    "nice_to_have": [
+      "大模型相关研究顶会论文（NeurIPS/ICML/ICLR/ACL 等）",
+      "垂直领域（金融、医疗、法律）语料库建设与数据闭环经验",
+      "MoE、多模态大模型、推理增强模型经验",
+      "开源大模型项目贡献或独立训练过开源模型",
+      "MCP 协议、模型评测体系（Eval）建设经验"
+    ],
+    "keywords": [
+      "LLM",
+      "大模型",
+      "Transformer",
+      "DeepSpeed",
+      "LoRA",
+      "SFT",
+      "RLHF",
+      "RAG",
+      "HuggingFace",
+      "预训练",
+      "微调",
+      "vLLM",
+      "量化"
+    ],
+    "responsibilities": [
+      "负责大模型预训练/后训练（微调、强化学习）核心工作，主导垂域大模型训练优化",
+      "搭建训练、评测、推理部署流水线，参与训练平台建设（分布式、混合精度、DeepSpeed）",
+      "结合 RAG/Agent 将大模型落地到具体业务场景，并持续优化模型效果与泛化能力",
+      "建设并优化预训练/微调语料库与数据集，搭建生产级数据闭环"
+    ],
+    "soft_skills": [
+      "方法论沉淀与跨团队协作能力",
+      "项目主导与业务对齐能力",
+      "对前沿技术的高敏感度与自驱力"
+    ],
+    "salary_band": "30k-70k/月（一线，资深可达 60-120万/年）"
+  },
+  {
+    "role": "ml",
+    "label": "机器学习工程师",
+    "aliases": ["ML", "机器学习", "建模", "机器学习开发"],
+    "must_have": [
+      "扎实的机器学习与统计建模理论（SVM、XGBoost、Random Forest、集成学习、偏差方差权衡）",
+      "精通 Python，熟悉 pandas/numpy/scikit-learn、XGBoost/LightGBM 等库",
+      "熟悉 PyTorch/TensorFlow 等深度学习框架，能做模型设计与调优",
+      "端到端模型开发与部署经验（KServe、ONNX、模型服务化）",
+      "熟悉特征工程、数据预处理、ML pipeline 设计与模型评估（AUC、F1、Precision/Recall）",
+      "具备 MLOps 基础：Airflow/MLflow 实验管理、模型监控与 A/B 测试",
+      "熟悉 SQL 与大数据处理（Spark/PySpark）",
+      "了解云平台上模型部署（AWS/Azure/GCP）"
+    ],
+    "nice_to_have": [
+      "深度学习专项（Transformer、多任务、迁移学习、大模型微调 LoRA/QLoRA）",
+      "风控/反欺诈/推荐等垂直场景建模经验",
+      "模型压缩、蒸馏、量化等推理优化技巧",
+      "Kaggle/天池竞赛获奖与技术影响力（博客、HuggingFace 贡献）"
+    ],
+    "keywords": [
+      "Python",
+      "scikit-learn",
+      "XGBoost",
+      "特征工程",
+      "模型部署",
+      "PyTorch",
+      "MLOps",
+      "MLflow",
+      "Spark",
+      "A/B测试",
+      "ONNX",
+      "统计建模"
+    ],
+    "responsibilities": [
+      "设计、构建并部署机器学习模型解决实际业务问题（如风控、欺诈检测、预测）",
+      "开展特征工程、数据分析与 A/B 测试，持续提升模型效果与业务指标",
+      "与数据工程、软件工程团队协作，将模型集成到生产系统并监控优化",
+      "跟踪 ML/LLM 前沿技术并应用于业务落地"
+    ],
+    "soft_skills": [
+      "问题拆解与解决能力",
+      "技术表达与跨团队协作能力",
+      "对业务背景的理解与快速学习能力"
+    ],
+    "salary_band": "25k-55k/月（一线）"
+  },
+  {
+    "role": "cv",
+    "label": "计算机视觉工程师",
+    "aliases": ["CV", "视觉算法", "图像", "视觉算法工程师"],
+    "must_have": [
+      "扎实的计算机视觉与图像处理理论基础（目标检测、图像分割、分类、跟踪）",
+      "熟练使用 Python/C++ 编程，熟悉 OpenCV、PCL 等计算机视觉库",
+      "深入掌握主流视觉算法：YOLO、Mask R-CNN、SSD 等检测/分割框架",
+      "熟练使用 PyTorch/TensorFlow 等深度学习框架，理解 CNN/RNN/LSTM/GAN",
+      "熟悉模型部署与加速：TensorRT、OpenVINO、模型量化、边缘端（Jetson）部署",
+      "熟悉工业相机/深度相机标定、点云处理、SLAM 等三维视觉技术",
+      "具备从算法研发到实际工程部署的全流程落地能力",
+      "良好的数学功底与英文文献阅读能力"
+    ],
+    "nice_to_have": [
+      "顶会论文（CVPR/ICCV/ECCV）或视觉竞赛奖项",
+      "机器人/机械臂视觉、三维重建、位姿估计经验",
+      "大模型视觉（ViT、MLLM、视觉大模型）研发经验",
+      "强化学习在机器人控制中的应用"
+    ],
+    "keywords": [
+      "OpenCV",
+      "目标检测",
+      "图像分割",
+      "YOLO",
+      "PyTorch",
+      "TensorRT",
+      "模型量化",
+      "深度学习",
+      "计算机视觉",
+      "Mask R-CNN",
+      "SLAM",
+      "边缘部署"
+    ],
+    "responsibilities": [
+      "负责视觉算法研发与优化（检测、识别、分割、跟踪、三维重建等），赋能业务感知能力",
+      "主导视觉算法在边缘/嵌入式设备的部署与加速（TensorRT/OpenVINO/量化），保障实时性与鲁棒性",
+      "解决实际应用难题（光照变化、目标遮挡）并持续优化算法性能",
+      "编写技术文档，配合硬件选型与工程落地"
+    ],
+    "soft_skills": [
+      "工程实践能力与独立交付能力",
+      "团队协作与沟通能力",
+      "问题分析与创新能力"
+    ],
+    "salary_band": "30k-60k/月（一线，资深更高）"
+  },
+  {
+    "role": "nlp",
+    "label": "NLP 工程师",
+    "aliases": ["自然语言处理", "语言模型", "NLP算法"],
+    "must_have": [
+      "扎实的 NLP 理论基础（文本预处理、评估指标、分词/词性/句法语义）",
+      "深入理解 Transformer、BERT、GPT/T5/GLM/LLaMA 等预训练语言模型原理",
+      "熟悉文本分类、NER、实体抽取、关系识别、意图识别、情感分析、语义匹配等任务",
+      "熟练使用 PyTorch/TensorFlow 与 NLP 开源框架（HuggingFace、HanLP 等）",
+      "熟悉大模型微调与应用（Prompt 工程、RAG、SFT、Agent、持续预训练）",
+      "掌握 SQL 与大数据处理（Hadoop/Spark/Hive/Flink）用于语料与特征处理",
+      "具备良好编程能力（Python，C++ 优先）与独立建模落地能力",
+      "熟练阅读英文文献，有序列建模（Seq2Seq、Attention、Mamba、word2vec）经验"
+    ],
+    "nice_to_have": [
+      "顶会论文（ACL/NAACL/EMNLP/COLING）或 NLP 竞赛名次",
+      "知识图谱建设（实体/关系/分类）与问答/对话系统经验",
+      "AIGC 产品落地、信息检索（搜索/NLU）背景",
+      "电商/垂直领域 NLP 落地经验"
+    ],
+    "keywords": [
+      "NLP",
+      "BERT",
+      "Transformer",
+      "命名实体识别",
+      "文本分类",
+      "知识图谱",
+      "HuggingFace",
+      "大模型微调",
+      "RAG",
+      "意图识别",
+      "PyTorch",
+      "语义理解"
+    ],
+    "responsibilities": [
+      "负责 NLP 核心算法研发（NLU/NLG、阅读理解、意图识别、情感分析、问答/对话）",
+      "建设知识图谱（实体抽取、关系识别、同品匹配）并推动前沿 NLP 技术落地",
+      "结合大模型（SFT/持续预训练/RAG）优化业务场景下的语义理解与内容分发",
+      "负责模型封装上线等工程开发与维护"
+    ],
+    "soft_skills": [
+      "跨部门沟通与交付能力",
+      "创新思维与业务理解",
+      "团队协作精神"
+    ],
+    "salary_band": "30k-60k/月（一线）"
+  },
+  {
+    "role": "recsys",
+    "label": "推荐算法工程师",
+    "aliases": ["推荐", "推荐系统", "召回", "排序", "搜推算法"],
+    "must_have": [
+      "深入理解推荐/搜索/广告系统全链路：召回-粗排-精排-重排",
+      "熟悉召回架构：双塔模型、Faiss、树索引、ANN 检索",
+      "熟悉精排/重排模型（LR、GBDT、FM、DeepFM、DIN/DIEN、MMoE、Attention）",
+      "扎实的特征工程与用户行为建模能力（用户画像、商品/内容特征、序列建模）",
+      "熟练使用 Linux/Python/Java/Shell/SQL 开发",
+      "熟悉大规模深度学习（强化学习、迁移学习、图神经网络 GNN）",
+      "具备大流量/超大规模电商场景实际算法落地经验",
+      "熟悉 Hadoop/Spark/Flink/Kafka 等大数据生态处理用户行为数据"
+    ],
+    "nice_to_have": [
+      "顶会论文（SIGKDD/ICML/NeurIPS/WSDM/WWW/RECSYS/ACL）",
+      "算法竞赛经历（ICPC、Topcoder、Kaggle、KDD Cup）",
+      "多模态/预训练大模型在推荐中的应用经验",
+      "短视频/直播/搜索业务理解与生态优化经验",
+      "LLM 辅助特征生成、用户意图理解落地"
+    ],
+    "keywords": [
+      "推荐系统",
+      "召回",
+      "排序",
+      "精排",
+      "重排",
+      "双塔模型",
+      "Faiss",
+      "DeepFM",
+      "特征工程",
+      "CTR/CVR",
+      "Spark",
+      "图神经网络"
+    ],
+    "responsibilities": [
+      "负责推荐/搜索场景下召回、排序、重排算法设计与落地，提升点击率、转化率等核心指标",
+      "构建用户画像与商品/内容特征，开展特征工程与序列建模挖掘用户兴趣",
+      "跟踪推荐前沿（大模型推荐、多模态、因果推断）并推动技术升级",
+      "针对超大流量场景优化搜推链路精度、多样性与相关性"
+    ],
+    "soft_skills": [
+      "业务 sense 与指标驱动思维",
+      "团队合作与沟通能力",
+      "对挑战性问题的热情与学习能力"
+    ],
+    "salary_band": "35k-90k/月（一线，京东等 60-90K·19薪）"
+  },
+  {
+    "role": "data_engineer",
+    "label": "数据工程师",
+    "aliases": ["数仓", "ETL", "数据开发", "数据平台", "大数据开发"],
+    "must_have": [
+      "精通 Hadoop/Spark/Flink 等大数据生态技术，熟悉 Hive/Kafka/HBase 组件原理",
+      "扎实的数据仓库建模能力（维度建模、星型/雪花模型、实时数仓）与 ETL 开发",
+      "熟练使用 SQL，精通 Python/Java/Scala 至少一门语言",
+      "熟悉数据集成、数据清洗、数据建模、画像标签等数据资产建设",
+      "掌握分布式计算框架设计与优化，了解流式计算（Flink/Kafka）",
+      "熟悉任务调度与工作流编排（Airflow、DolphinScheduler）",
+      "有大规模数据链路建设、高可用架构设计与数据治理经验",
+      "良好的数据质量意识与性能调优能力"
+    ],
+    "nice_to_have": [
+      "实时数仓与实时计算（Flink 流处理）深度经验",
+      "数据湖/湖仓一体（Iceberg、Hudi、Delta Lake）技术",
+      "机器学习框架（TensorFlow/PyTorch）与算法项目落地经验",
+      "云数仓（Redshift、BigQuery、MaxCompute）与数据治理平台经验",
+      "LLM 多模态离线推理能力建设"
+    ],
+    "keywords": [
+      "Hive",
+      "Spark",
+      "Flink",
+      "数据仓库",
+      "ETL",
+      "Kafka",
+      "HBase",
+      "Airflow",
+      "SQL",
+      "实时数仓",
+      "数据建模",
+      "数据治理"
+    ],
+    "responsibilities": [
+      "负责数据仓库设计与构建，保障数据准确性、及时性与数据质量",
+      "基于 Hadoop/Spark/Flink/Kafka 构建高性能数据管道与特征计算平台",
+      "开展数据集成、清洗、建模、画像标签等数据资产建设，优化处理流程",
+      "跟踪大数据与 AI 前沿技术，探索创新应用并支撑业务决策"
+    ],
+    "soft_skills": [
+      "业务理解与数据方案设计能力",
+      "跨团队沟通协作能力",
+      "强执行力与问题解决能力"
+    ],
+    "salary_band": "25k-50k/月（一线，高级数仓可达 50K）"
+  },
+  {
+    "role": "data_analyst",
+    "label": "数据分析师",
+    "aliases": ["数据分析", "BI", "经营分析", "商业分析", "数据科学家"],
+    "must_have": [
+      "精通 Excel 与 SQL，能独立完成数据获取、清洗、整合与分析",
+      "熟练使用 Python/R 进行数据处理与建模（pandas、numpy、scikit-learn）",
+      "掌握至少一种 BI/可视化工具（Tableau、PowerBI、FineBI）搭建数据看板",
+      "扎实的统计学基础（假设检验、回归分析、聚类分析、相关性）",
+      "具备指标体系搭建、异动归因与数据监控体系能力",
+      "熟悉 A/B 实验设计与评估方法",
+      "强烈的业务理解力与数据敏感度，能从数据提取价值并输出策略",
+      "良好的逻辑分析与跨部门沟通推动能力"
+    ],
+    "nice_to_have": [
+      "机器学习基础（预测模型、分类模型、用户画像）",
+      "经营分析/商业分析复合背景（财务、金融、战略）",
+      "CDA/CPA/FRM 等相关认证",
+      "Python 自动化分析与可视化工具开发经验",
+      "大型互联网公司数据分析/商业分析经验"
+    ],
+    "keywords": [
+      "SQL",
+      "Excel",
+      "Python/R",
+      "Tableau",
+      "PowerBI",
+      "BI",
+      "A/B测试",
+      "指标体系",
+      "数据可视化",
+      "经营分析",
+      "异动归因",
+      "统计建模"
+    ],
+    "responsibilities": [
+      "搭建业务数据监控体系与核心指标看板，及时察觉经营波动并定位问题",
+      "通过专题分析、用户画像、用户生命周期分析挖掘业务增长机会点",
+      "设计 A/B 实验与抽样调研，用数据驱动产品、策略、模型改进",
+      "输出经营/商业分析报告与策略建议并推动落地"
+    ],
+    "soft_skills": [
+      "商业 sense 与逻辑分析能力",
+      "跨部门沟通与推动落地能力",
+      "抗压能力与多线程并行"
+    ],
+    "salary_band": "15k-40k/月（一线，数据科学家/专家 40-75K）"
+  },
+  {
+    "role": "aigc",
+    "label": "AIGC / 多模态工程师",
+    "aliases": ["多模态", "生成式AI", "扩散模型", "Diffusion", "文生图", "AIGC算法"],
+    "must_have": [
+      "深入理解 Diffusion Model（DDPM、Stable Diffusion、DiT）、GAN、VAE、Autoregressive 等生成模型原理",
+      "熟悉多模态大模型（VLM）与端到端多模态生成式大模型训练调优",
+      "熟练使用 PyTorch 等深度学习框架，熟悉 Python/C++ 与 Linux 开发",
+      "有文生图/图生图/视频生成/图像编辑等 AIGC 任务实际落地经验",
+      "掌握模型微调与可控生成技术（LoRA 训练、In-Context Learning、小样本）",
+      "熟悉 AIGC 应用开发工具（ComfyUI、WebUI）并能量身定制训练生成模型",
+      "了解模型加速与部署（TensorRT、量化、推理优化）",
+      "具备算法调研、复现与业务可用性评估优化能力"
+    ],
+    "nice_to_have": [
+      "顶会/顶刊论文（CVPR/ECCV/ICCV/NeurIPS/ICLR/ICML/PAMI/IJCV）",
+      "电商 AIGC 业务经验（AI 模特、AI 试穿、商品海报生成、3D 生成）",
+      "神经渲染（NeRF、Gaussian Splatting）与 3D 视觉基础",
+      "重要算法比赛优秀名次或 ACM 竞赛奖项",
+      "Multi-Agent、模型 Finetuning 在内容生成中的业务落地"
+    ],
+    "keywords": [
+      "Diffusion",
+      "Stable Diffusion",
+      "DiT",
+      "多模态",
+      "AIGC",
+      "GAN",
+      "VLM",
+      "ComfyUI",
+      "LoRA",
+      "文生图",
+      "视频生成",
+      "PyTorch"
+    ],
+    "responsibilities": [
+      "负责多模态/AIGC 生成算法研发（文本/图像/视频生成），解决生成质量、可控性与效率问题",
+      "端到端多模态生成式大模型框架设计、训练与调优，推动业务场景产品化落地",
+      "探索 AIGC 在电商/内容/游戏等场景的全新业务形态（如 AI 模特、风格化生成）",
+      "结合业务做指令优化、模型 Finetune 与性能加速，突破算法卡点"
+    ],
+    "soft_skills": [
+      "技术追求与表达沟通能力",
+      "创新实践与技术突破自驱力",
+      "业务审美与跨团队协作"
+    ],
+    "salary_band": "30k-60k/月（一线，资深/专家更高）"
+  }
+]

@@ -1,0 +1,2855 @@
+{
+  "_meta": {
+    "description": "岗位要求知识库：从主流招聘平台（猎聘/BOSS直聘/拉勾/牛客/智联/各大厂招聘页/高校就业网等）真实 JD 大规模抓取并归纳，用作简历分析与优化的检索增强数据源。非模型微调，而是结构化的领域知识，让分析'有据可依'。",
+    "built_from": "web-scraped real recruitment JD (BOSS直聘/猎聘/拉勾/牛客/智联/各大厂招聘页/高校就业网/安全社区/量化社区/设计社区等)",
+    "built_at": "2026-07-12",
+    "version": 2,
+    "roles_count": 44,
+    "curated_roles": 16,
+    "researched_roles_added": 28,
+    "curated_roles_enriched": 16
+  },
+  "roles": [
+    {
+      "role": "backend",
+      "label": "后端开发工程师",
+      "aliases": [
+        "后端",
+        "服务端",
+        "backend",
+        "后端工程师",
+        "服务端开发",
+        "java后端",
+        "后台开发",
+        "后端开发"
+      ],
+      "must_have": [
+        "Java",
+        "Go",
+        "Python",
+        "Spring Boot",
+        "Spring Cloud",
+        "MySQL",
+        "Redis",
+        "微服务",
+        "分布式",
+        "高并发",
+        "SQL优化",
+        "多线程",
+        "RESTful API",
+        "扎实的 Java/Go/Python 等至少一门后端语言基础，理解 JVM 原理、并发编程、IO 模型与线程模型",
+        "精通至少一种主流 Web 框架（Spring Boot / Spring Cloud / Gin / FastAPI / Django 等）及其核心原理",
+        "熟练使用 MySQL 等关系型数据库，掌握 SQL 优化、索引设计、事务与分库分表/读写分离",
+        "熟悉 Redis 缓存设计与优化，了解 Kafka / RabbitMQ / RocketMQ 等消息队列的应用场景",
+        "掌握分布式系统基础：服务注册发现、负载均衡、熔断降级、分布式事务、链路追踪",
+        "熟悉 Linux 环境开发与部署，掌握 Git、Docker 容器化及基本 CI/CD 流程",
+        "具备高并发、高可用、高性能系统的设计与问题排查能力"
+      ],
+      "nice_to_have": [
+        "Kafka",
+        "RocketMQ",
+        "Elasticsearch",
+        "Docker",
+        "Kubernetes",
+        "gRPC",
+        "Nginx",
+        "MyBatis",
+        "分库分表",
+        "服务网格",
+        "云原生",
+        "MongoDB",
+        "有云原生经验：Kubernetes / Istio / 服务网格落地",
+        "熟悉 Elasticsearch、ClickHouse、MongoDB 等 NoSQL / OLAP 技术",
+        "具备 AI 工具辅助编程经验（Cursor / Copilot / Codex）",
+        "有向量数据库（Milvus / Chroma / Weaviate）或 RAG / 大模型集成经验",
+        "熟悉 DDD 领域驱动设计、设计模式与中大型系统重构经验"
+      ],
+      "keywords": [
+        "高并发",
+        "分布式系统",
+        "微服务架构",
+        "性能优化",
+        "数据库设计",
+        "系统稳定性",
+        "中间件",
+        "JVM调优",
+        "接口设计",
+        "spring boot",
+        "spring cloud",
+        "mysql",
+        "redis",
+        "kafka",
+        "docker",
+        "microservices",
+        "distributed",
+        "high concurrency",
+        "mybatis",
+        "restful api",
+        "kubernetes",
+        "gRPC"
+      ],
+      "responsibilities": [
+        "业务系统后端设计与开发",
+        "数据库设计与SQL优化",
+        "高并发/高可用架构落地",
+        "接口开发与联调",
+        "线上问题排查与性能优化",
+        "负责核心业务系统的设计与开发，保障系统稳定性、可扩展性与高可用",
+        "参与微服务架构下模块开发与接口设计，优化数据库性能并解决线上技术难题",
+        "与前端、测试、算法团队紧密协作，推动需求高质量交付与系统持续调优"
+      ],
+      "soft_skills": [
+        "逻辑思维",
+        "抗压能力",
+        "跨团队协作",
+        "自驱力",
+        "持续学习",
+        "良好的逻辑思维与独立问题定位解决能力",
+        "跨团队沟通协作与需求抽象能力"
+      ],
+      "salary_band": "15k-40k/月（一线，3-8年经验）"
+    },
+    {
+      "role": "frontend",
+      "label": "前端开发工程师",
+      "aliases": [
+        "前端",
+        "frontend",
+        "web前端",
+        "前端工程师",
+        "大前端",
+        "h5开发"
+      ],
+      "must_have": [
+        "JavaScript",
+        "ES6",
+        "HTML5",
+        "CSS3",
+        "Vue",
+        "React",
+        "TypeScript",
+        "Vite",
+        "Webpack",
+        "组件化",
+        "前端工程化",
+        "精通 HTML5 / CSS3 / JavaScript(ES6+) 与语义化标签、rem/px 等布局方案",
+        "熟练掌握 TypeScript 并能在项目中落地类型安全",
+        "至少精通一种主流框架：React 18 / Vue 3（含 Hooks / Composition API），理解其核心原理",
+        "熟悉前端构建与工程化工具：Vite / Webpack / Gulp，了解配置与优化策略",
+        "熟悉 Node.js，能满足日常服务端/构建脚本开发",
+        "具备 Web 性能优化与 Web 安全实战经验（首屏、懒加载、XSS/CSRF 等）",
+        "熟悉 HTTP/HTTPS、Websocket 协议与 RESTful 接口联调",
+        "熟练使用 Git 进行代码管理与协作，具备良好编码规范"
+      ],
+      "nice_to_have": [
+        "Pinia",
+        "Vuex",
+        "Redux",
+        "UniApp",
+        "小程序",
+        "Node.js",
+        "ECharts",
+        "性能优化",
+        "Element Plus",
+        "Ant Design",
+        "微前端",
+        "Flutter",
+        "熟悉小程序开发及 Taro / Uniapp 跨端框架",
+        "有 WebGL / Canvas / Three.js 或图形相关应用经验",
+        "了解浏览器渲染原理、前端自动化测试（Jest / Playwright）",
+        "有前端组件库 / 设计系统建设经验",
+        "熟悉 Flutter 或多端统一方案"
+      ],
+      "keywords": [
+        "响应式布局",
+        "跨端适配",
+        "接口联调",
+        "首屏优化",
+        "浏览器渲染原理",
+        "组件库",
+        "可视化",
+        "用户体验",
+        "React 18",
+        "Vue 3",
+        "TypeScript",
+        "Vite",
+        "Webpack",
+        "HTML5/CSS3",
+        "Node.js",
+        "前端工程化",
+        "Web性能优化",
+        "Web安全",
+        "小程序",
+        "Git"
+      ],
+      "responsibilities": [
+        "Web/移动端页面开发与迭代",
+        "前端架构与组件库建设",
+        "性能与兼容性优化",
+        "与后端/UI/产品协作联调",
+        "前端工程化落地",
+        "负责 PC/H5/小程序等前端业务的技术选型、开发与持续性能优化",
+        "参与前端技术架构优化、通用组件库建设与技术难题攻关，提升研发效率",
+        "与产品、设计、后端协作，持续打磨用户体验并保障系统稳定性"
+      ],
+      "soft_skills": [
+        "审美还原能力",
+        "沟通协作",
+        "抗压",
+        "快速学习",
+        "责任心",
+        "良好的沟通协作与团队合作意识",
+        "自驱学习能力，能独立分析问题并落地方案",
+        "对 Web 前沿技术敏感，乐于探索并应用到实际项目"
+      ],
+      "salary_band": "15k-35k/月（一线，3年以上可达20k-40k·15薪）"
+    },
+    {
+      "role": "java",
+      "label": "Java 开发工程师",
+      "aliases": [
+        "java",
+        "java开发",
+        "java工程师",
+        "java后端"
+      ],
+      "must_have": [
+        "Java",
+        "JVM",
+        "并发编程",
+        "Spring",
+        "Spring Boot",
+        "Spring Cloud",
+        "MyBatis",
+        "MySQL",
+        "Redis",
+        "多线程",
+        "精通 Java 8+ 核心特性（Lambda、Stream API、并发包），扎实的 Java 编程基础",
+        "深入理解 JVM 原理：内存模型、垃圾回收机制与性能调优",
+        "精通 Spring Boot / Spring Cloud / Spring MVC / MyBatis 等主流框架及核心原理",
+        "熟练使用 MySQL，掌握 SQL 优化、索引设计、复杂查询与分库分表/读写分离",
+        "熟悉 Redis 缓存、RabbitMQ / Kafka 等消息中间件，掌握 Docker / K8s 容器化部署",
+        "理解分布式系统原理，具备微服务架构开发经验（服务注册发现、熔断降级、分布式事务）",
+        "熟悉 Linux 环境与基本运维，掌握 Git、CI/CD 流程"
+      ],
+      "nice_to_have": [
+        "Dubbo",
+        "RocketMQ",
+        "Kafka",
+        "ZooKeeper",
+        "Elasticsearch",
+        "Docker",
+        "Kubernetes",
+        "分库分表",
+        "设计模式",
+        "HBase",
+        "熟悉 Dubbo、RocketMQ、Nacos、Sentinel、Seata 等阿里系微服务生态",
+        "掌握 Elasticsearch、ClickHouse、MongoDB 等 NoSQL / OLAP 存储",
+        "有 AI 编程工具（Cursor / Copilot）或大模型集成 / RAG 经验",
+        "熟悉 DDD 领域驱动设计、设计模式与大型高并发系统设计",
+        "具备 Python 等多语言能力或大数据平台（Flink / Spark）对接经验"
+      ],
+      "keywords": [
+        "面向对象",
+        "JVM调优",
+        "GC",
+        "分布式锁",
+        "微服务",
+        "高并发",
+        "事务隔离",
+        "中间件",
+        "java",
+        "spring boot",
+        "spring cloud",
+        "mybatis",
+        "jvm",
+        "mysql",
+        "redis",
+        "kafka",
+        "dubbo",
+        "microservices",
+        "distributed transaction",
+        "docker"
+      ],
+      "responsibilities": [
+        "核心业务系统开发",
+        "系统架构设计与优化",
+        "中间件应用与治理",
+        "SQL与性能优化",
+        "负责 Java 后端服务与微服务模块的设计、开发与维护，保障高可用与扩展性",
+        "使用 Nacos / MyBatis-Plus / ClickHouse 等进行服务治理、持久层与数据存储优化",
+        "参与高并发、高负载系统的性能调优与稳定性建设，配合业务/算法团队交付"
+      ],
+      "soft_skills": [
+        "逻辑思维",
+        "团队协作",
+        "抗压",
+        "自我驱动",
+        "良好的业务理解与技术抽象能力",
+        "独立定位线上问题、推动技术方案落地的责任心"
+      ],
+      "salary_band": "15k-50k/月（一线，含大厂与资深岗）"
+    },
+    {
+      "role": "python",
+      "label": "Python 开发工程师",
+      "aliases": [
+        "python",
+        "python开发",
+        "python工程师",
+        "后端python",
+        "Python后端"
+      ],
+      "must_have": [
+        "Python",
+        "Django",
+        "Flask",
+        "FastAPI",
+        "MySQL",
+        "Redis",
+        "RESTful API",
+        "Linux",
+        "SQL",
+        "熟练 Python 3.x，掌握类型注解、异步编程（asyncio）、面向对象与常用设计模式",
+        "至少精通一种 Web 框架（FastAPI / Django / Flask），了解中间件、认证鉴权与限流安全加固",
+        "熟悉 SQLAlchemy / Django ORM，掌握事务、索引、查询计划与 MySQL/PostgreSQL 优化",
+        "熟练使用 Redis 缓存与 Kafka / RabbitMQ 消息队列",
+        "熟悉 Linux / Git / Docker，了解 CI/CD（GitHub Actions / GitLab CI / Jenkins）与云原生概念",
+        "具备工程素养：代码规范（flake8 / ruff / black / isort）、pytest 测试优先、文档意识"
+      ],
+      "nice_to_have": [
+        "Celery",
+        "asyncio",
+        "Docker",
+        "Kubernetes",
+        "Kafka",
+        "MongoDB",
+        "爬虫",
+        "数据处理",
+        "pytest",
+        "有大模型和 Agent 开发经验，熟悉 LangChain / LlamaIndex、RAG 与向量数据库（Milvus）",
+        "熟悉 Elasticsearch、MongoDB、Celery、gRPC 等技术",
+        "有云计算（AWS / 阿里云 / 腾讯云）与服务部署经验",
+        "前端技术（React / Vue）或全栈开发经验",
+        "开源项目贡献或技术社区活跃"
+      ],
+      "keywords": [
+        "接口开发",
+        "异步编程",
+        "自动化",
+        "数据处理",
+        "服务部署",
+        "性能优化",
+        "python",
+        "fastapi",
+        "django",
+        "flask",
+        "asyncio",
+        "sqlalchemy",
+        "mysql",
+        "postgresql",
+        "redis",
+        "kafka",
+        "docker",
+        "pytest",
+        "microservices"
+      ],
+      "responsibilities": [
+        "后端服务与接口开发",
+        "数据处理与自动化脚本",
+        "系统集成与部署",
+        "负责 Python 后端服务的需求分析、设计与实现，交付高质量可维护代码",
+        "基于 FastAPI/Django 设计 REST/gRPC 接口，完善 Swagger/OpenAPI 文档与数据库建模优化",
+        "建立工程化体系（单元/集成测试、监控告警、灰度发布），与产品/前端/算法团队协作落地"
+      ],
+      "soft_skills": [
+        "逻辑思维",
+        "自驱力",
+        "协作",
+        "学习能力",
+        "良好的团队协作与产品沟通能力",
+        "快速排查线上问题、持续学习行业新技术的热情"
+      ],
+      "salary_band": "12k-30k/月（一线，2-8年经验）"
+    },
+    {
+      "role": "golang",
+      "label": "Go 开发工程师",
+      "aliases": [
+        "go",
+        "golang",
+        "go开发",
+        "go工程师",
+        "Go语言"
+      ],
+      "must_have": [
+        "Go",
+        "Golang",
+        "gRPC",
+        "微服务",
+        "MySQL",
+        "Redis",
+        "高并发",
+        "goroutine",
+        "分布式",
+        "精通 Go 语言，深入理解内存管理、逃逸分析/GC 调优、泛型（Go 1.18+）与错误处理",
+        "精通多协程并发编程，熟悉 goroutine / channel 机制与并发任务调度、资源管理",
+        "熟练使用 Gin / Echo 等 Web 框架，掌握 gRPC / Protobuf、RESTful API 设计",
+        "熟悉 MySQL / Redis 等数据库，能编写高效 SQL 并解决慢查询与缓存问题",
+        "理解分布式系统设计，具备微服务架构实践经验（服务注册发现、配置中心）",
+        "熟悉 Kafka / RocketMQ / NATS 等消息队列，掌握 Docker / Kubernetes 与 CI/CD 流程",
+        "熟悉性能分析工具（pprof）、性能调优与线上故障排查"
+      ],
+      "nice_to_have": [
+        "Gin",
+        "Kubernetes",
+        "Docker",
+        "etcd",
+        "Kafka",
+        "云原生",
+        "服务网格",
+        "Prometheus",
+        "熟悉 etcd、TiDB / CockroachDB、分布式 SQL 与分布式事务（TCC/Saga）",
+        "了解服务网格（Service Mesh）、Istio 与云原生技术趋势",
+        "有高并发系统优化经验（QPS 优化、连接池 sqlx/pgx 调优）",
+        "熟悉 DDD 领域驱动设计的微服务拆分",
+        "参与开源项目或有技术博客输出"
+      ],
+      "keywords": [
+        "高并发",
+        "微服务",
+        "分布式系统",
+        "云原生",
+        "性能优化",
+        "中间件",
+        "golang",
+        "gin",
+        "grpc",
+        "goroutine",
+        "channel",
+        "kubernetes",
+        "microservices",
+        "kafka",
+        "mysql",
+        "redis",
+        "docker",
+        "high concurrency"
+      ],
+      "responsibilities": [
+        "高并发后端服务开发",
+        "微服务与云原生组件建设",
+        "性能与稳定性优化",
+        "负责 Golang 后端微服务架构设计与核心功能开发，实现高性能 API 与服务间通信",
+        "优化系统性能，保障高并发场景下的稳定性与可用性，参与技术方案制定与代码评审",
+        "跟踪云原生技术趋势，推动技术栈持续优化与容器化交付"
+      ],
+      "soft_skills": [
+        "逻辑思维",
+        "协作",
+        "抗压",
+        "自驱力",
+        "良好的代码规范意识与团队协作能力",
+        "独立处理线上复杂问题、推动技术落地"
+      ],
+      "salary_band": "15k-35k/月（一线，1-8年经验）"
+    },
+    {
+      "role": "algorithm",
+      "label": "算法工程师",
+      "aliases": [
+        "算法",
+        "机器学习",
+        "ml",
+        "算法工程师",
+        "机器学习工程师",
+        "算法研发",
+        "深度学习",
+        "算法岗",
+        "AI算法",
+        "算法开发"
+      ],
+      "must_have": [
+        "机器学习",
+        "深度学习",
+        "Python",
+        "PyTorch",
+        "TensorFlow",
+        "特征工程",
+        "数据建模",
+        "概率论",
+        "线性代数",
+        "算法",
+        "扎实的机器学习/深度学习理论基础（LR、GBDT、FM、Embedding、Attention、Transformer等）",
+        "精通 Python，熟悉 C++/Java 至少一门系统级语言，代码功底与数据结构扎实",
+        "熟练使用 PyTorch/TensorFlow 至少一种深度学习框架，能独立复现论文并落地模型",
+        "熟悉大数据处理工具（Spark/Flink/Hadoop/Hive）与 Linux 开发环境",
+        "具备端到端建模能力：数据清洗、特征工程、模型训练、调优与上线部署",
+        "数学基础扎实（线性代数、概率统计、最优化方法）",
+        "有大规模（亿级样本/大流量）场景模型落地经验",
+        "良好的英文文献阅读与 paper 复现能力"
+      ],
+      "nice_to_have": [
+        "推荐系统",
+        "NLP",
+        "计算机视觉",
+        "Spark",
+        "SQL",
+        "CUDA",
+        "A/B实验",
+        "分布式训练",
+        "风控",
+        "顶会论文（ICML/ICLR/NeurIPS/CVPR/ACL 等）或竞赛获奖（Kaggle、ACM-ICPC）",
+        "开源项目贡献或自研算法框架经验",
+        "大模型（LLM）预训练/微调经验（LoRA、SFT、RLHF 等）",
+        "跨行业背景（金融、医疗、电商）与业务理解",
+        "模型工程化能力（量化、蒸馏、推理加速、FastAPI/Flask 部署、VLLM）"
+      ],
+      "keywords": [
+        "模型训练",
+        "特征工程",
+        "效果优化",
+        "数据挖掘",
+        "算法落地",
+        "评估指标",
+        "实验设计",
+        "Python",
+        "PyTorch",
+        "TensorFlow",
+        "Transformer",
+        "深度学习",
+        "Spark",
+        "机器学习",
+        "模型部署",
+        "分布式训练",
+        "GBDT/XGBoost",
+        "算法优化"
+      ],
+      "responsibilities": [
+        "算法模型研发与优化",
+        "特征工程与数据建模",
+        "业务场景算法落地",
+        "模型效果评估与迭代",
+        "负责业务场景下的算法模型研发、训练、调优与效果优化，直接驱动业务指标（CTR/CVR/留存等）提升",
+        "对接数据工程、前后端与产品团队，完成算法从离线实验到线上服务的全流程落地",
+        "跟踪业界前沿技术（大模型、多模态、强化学习等）并探索业务应用",
+        "沉淀方法论与技术规范，输出专利/论文/技术文档"
+      ],
+      "soft_skills": [
+        "数据思维",
+        "问题分析",
+        "复盘能力",
+        "团队协作",
+        "强逻辑思维与复杂问题拆解能力",
+        "跨团队沟通协作与项目主导能力",
+        "快速学习与业务分析能力"
+      ],
+      "salary_band": "25k-60k/月（一线，资深可达 50-100万/年）"
+    },
+    {
+      "role": "llm",
+      "label": "大模型算法工程师",
+      "aliases": [
+        "大模型",
+        "llm",
+        "大语言模型",
+        "aigc",
+        "大模型算法",
+        "生成式ai",
+        "agent工程师",
+        "AIGC算法",
+        "预训练",
+        "微调",
+        "大模型应用"
+      ],
+      "must_have": [
+        "大模型",
+        "LLM",
+        "Transformer",
+        "PyTorch",
+        "Python",
+        "深度学习",
+        "预训练",
+        "微调",
+        "SFT",
+        "RAG",
+        "Prompt",
+        "深入理解 Transformer 架构及主流 LLM（GPT/LLaMA/DeepSeek/Qwen/GLM/Baichuan 等）训练与微调原理",
+        "掌握后训练核心算法：CPT、SFT、DPO、PPO、GRPO、RLHF 等",
+        "熟悉微调方法：全参数微调、LoRA、QLoRA、P-Tuning 等",
+        "熟练使用 PyTorch、HuggingFace Transformers、DeepSpeed、FSDP 等训练工具",
+        "掌握分布式训练与显存优化：ZeRO/Offload、Flash Attention、混合精度、激活重计算",
+        "具备大模型工程化能力：量化、蒸馏、推理加速（vLLM、TensorRT-LLM、Triton）与容器化部署（Docker/K8s）",
+        "有百亿级参数模型预训练/后训练实战经验",
+        "熟悉 RAG 技术栈（LangChain、LlamaIndex）与 Agent 系统设计与优化"
+      ],
+      "nice_to_have": [
+        "RLHF",
+        "DPO",
+        "LoRA",
+        "QLoRA",
+        "模型量化",
+        "蒸馏",
+        "多模态",
+        "vLLM",
+        "DeepSpeed",
+        "Megatron",
+        "长上下文",
+        "Agent",
+        "LangChain",
+        "CUDA",
+        "Hugging Face",
+        "大模型相关研究顶会论文（NeurIPS/ICML/ICLR/ACL 等）",
+        "垂直领域（金融、医疗、法律）语料库建设与数据闭环经验",
+        "MoE、多模态大模型、推理增强模型经验",
+        "开源大模型项目贡献或独立训练过开源模型",
+        "MCP 协议、模型评测体系（Eval）建设经验"
+      ],
+      "keywords": [
+        "预训练",
+        "指令微调",
+        "对齐优化",
+        "推理加速",
+        "检索增强生成",
+        "幻觉控制",
+        "分布式训练",
+        "效果评估",
+        "LLM",
+        "大模型",
+        "Transformer",
+        "DeepSpeed",
+        "LoRA",
+        "SFT",
+        "RLHF",
+        "RAG",
+        "HuggingFace",
+        "微调",
+        "vLLM",
+        "量化"
+      ],
+      "responsibilities": [
+        "大模型预训练/微调/对齐研发",
+        "RAG 与 Agent 应用落地",
+        "推理优化与模型压缩部署",
+        "数据构建与评估体系建设",
+        "跟踪前沿并工程化验证",
+        "负责大模型预训练/后训练（微调、强化学习）核心工作，主导垂域大模型训练优化",
+        "搭建训练、评测、推理部署流水线，参与训练平台建设（分布式、混合精度、DeepSpeed）",
+        "结合 RAG/Agent 将大模型落地到具体业务场景，并持续优化模型效果与泛化能力",
+        "建设并优化预训练/微调语料库与数据集，搭建生产级数据闭环"
+      ],
+      "soft_skills": [
+        "前沿跟踪",
+        "从0到1落地",
+        "实验能力",
+        "团队协作",
+        "方法论沉淀与跨团队协作能力",
+        "项目主导与业务对齐能力",
+        "对前沿技术的高敏感度与自驱力"
+      ],
+      "salary_band": "30k-70k/月（一线，资深可达 60-120万/年）"
+    },
+    {
+      "role": "data_analyst",
+      "label": "数据分析师",
+      "aliases": [
+        "数据分析",
+        "数据分析师",
+        "data analyst",
+        "商业分析",
+        "bi分析师",
+        "BI",
+        "经营分析",
+        "数据科学家"
+      ],
+      "must_have": [
+        "SQL",
+        "Excel",
+        "Python",
+        "数据分析",
+        "数据可视化",
+        "统计学",
+        "业务分析",
+        "指标体系",
+        "精通 Excel 与 SQL，能独立完成数据获取、清洗、整合与分析",
+        "熟练使用 Python/R 进行数据处理与建模（pandas、numpy、scikit-learn）",
+        "掌握至少一种 BI/可视化工具（Tableau、PowerBI、FineBI）搭建数据看板",
+        "扎实的统计学基础（假设检验、回归分析、聚类分析、相关性）",
+        "具备指标体系搭建、异动归因与数据监控体系能力",
+        "熟悉 A/B 实验设计与评估方法",
+        "强烈的业务理解力与数据敏感度，能从数据提取价值并输出策略",
+        "良好的逻辑分析与跨部门沟通推动能力"
+      ],
+      "nice_to_have": [
+        "Tableau",
+        "Power BI",
+        "Pandas",
+        "A/B实验",
+        "SPSS",
+        "增长分析",
+        "用户画像",
+        "漏斗分析",
+        "机器学习基础（预测模型、分类模型、用户画像）",
+        "经营分析/商业分析复合背景（财务、金融、战略）",
+        "CDA/CPA/FRM 等相关认证",
+        "Python 自动化分析与可视化工具开发经验",
+        "大型互联网公司数据分析/商业分析经验"
+      ],
+      "keywords": [
+        "数据洞察",
+        "指标拆解",
+        "报表",
+        "归因分析",
+        "业务增长",
+        "可视化看板",
+        "数据驱动决策",
+        "SQL",
+        "Excel",
+        "Python/R",
+        "Tableau",
+        "PowerBI",
+        "BI",
+        "A/B测试",
+        "指标体系",
+        "数据可视化",
+        "经营分析",
+        "异动归因",
+        "统计建模"
+      ],
+      "responsibilities": [
+        "业务数据分析与洞察",
+        "指标体系与报表搭建",
+        "专题分析与归因",
+        "数据驱动业务决策",
+        "搭建业务数据监控体系与核心指标看板，及时察觉经营波动并定位问题",
+        "通过专题分析、用户画像、用户生命周期分析挖掘业务增长机会点",
+        "设计 A/B 实验与抽样调研，用数据驱动产品、策略、模型改进",
+        "输出经营/商业分析报告与策略建议并推动落地"
+      ],
+      "soft_skills": [
+        "业务理解",
+        "逻辑思维",
+        "沟通表达",
+        "结果导向",
+        "商业 sense 与逻辑分析能力",
+        "跨部门沟通与推动落地能力",
+        "抗压能力与多线程并行"
+      ],
+      "salary_band": "15k-40k/月（一线，数据科学家/专家 40-75K）"
+    },
+    {
+      "role": "data_engineer",
+      "label": "数据工程师",
+      "aliases": [
+        "数据开发",
+        "数仓",
+        "大数据开发",
+        "etl工程师",
+        "data engineer",
+        "数据仓库",
+        "ETL",
+        "数据平台"
+      ],
+      "must_have": [
+        "SQL",
+        "Hive",
+        "Spark",
+        "数据仓库",
+        "ETL",
+        "数据建模",
+        "Python",
+        "Hadoop",
+        "精通 Hadoop/Spark/Flink 等大数据生态技术，熟悉 Hive/Kafka/HBase 组件原理",
+        "扎实的数据仓库建模能力（维度建模、星型/雪花模型、实时数仓）与 ETL 开发",
+        "熟练使用 SQL，精通 Python/Java/Scala 至少一门语言",
+        "熟悉数据集成、数据清洗、数据建模、画像标签等数据资产建设",
+        "掌握分布式计算框架设计与优化，了解流式计算（Flink/Kafka）",
+        "熟悉任务调度与工作流编排（Airflow、DolphinScheduler）",
+        "有大规模数据链路建设、高可用架构设计与数据治理经验",
+        "良好的数据质量意识与性能调优能力"
+      ],
+      "nice_to_have": [
+        "Flink",
+        "Kafka",
+        "ClickHouse",
+        "HBase",
+        "数据治理",
+        "调度系统",
+        "实时计算",
+        "数据湖",
+        "实时数仓与实时计算（Flink 流处理）深度经验",
+        "数据湖/湖仓一体（Iceberg、Hudi、Delta Lake）技术",
+        "机器学习框架（TensorFlow/PyTorch）与算法项目落地经验",
+        "云数仓（Redshift、BigQuery、MaxCompute）与数据治理平台经验",
+        "LLM 多模态离线推理能力建设"
+      ],
+      "keywords": [
+        "数仓建模",
+        "离线/实时计算",
+        "数据管道",
+        "数据质量",
+        "维度建模",
+        "数据治理",
+        "Hive",
+        "Spark",
+        "Flink",
+        "数据仓库",
+        "ETL",
+        "Kafka",
+        "HBase",
+        "Airflow",
+        "SQL",
+        "实时数仓",
+        "数据建模"
+      ],
+      "responsibilities": [
+        "数仓分层与建模",
+        "离线与实时数据管道开发",
+        "数据质量与治理",
+        "支撑分析与算法数据需求",
+        "负责数据仓库设计与构建，保障数据准确性、及时性与数据质量",
+        "基于 Hadoop/Spark/Flink/Kafka 构建高性能数据管道与特征计算平台",
+        "开展数据集成、清洗、建模、画像标签等数据资产建设，优化处理流程",
+        "跟踪大数据与 AI 前沿技术，探索创新应用并支撑业务决策"
+      ],
+      "soft_skills": [
+        "严谨",
+        "协作",
+        "自驱力",
+        "业务理解与数据方案设计能力",
+        "跨团队沟通协作能力",
+        "强执行力与问题解决能力"
+      ],
+      "salary_band": "25k-50k/月（一线，高级数仓可达 50K）"
+    },
+    {
+      "role": "product_manager",
+      "label": "产品经理",
+      "aliases": [
+        "产品经理",
+        "产品",
+        "pm",
+        "product manager",
+        "产品专员",
+        "产品岗"
+      ],
+      "must_have": [
+        "需求分析",
+        "产品设计",
+        "原型",
+        "Axure",
+        "竞品分析",
+        "用户研究",
+        "PRD",
+        "项目推进",
+        "需求分析：业务流程分析、功能需求分析、数据需求分析，并能将用户/客户需求转化为产品需求",
+        "PRD撰写与文档能力：产品需求文档、需求规格说明书、用户手册等",
+        "原型设计工具：熟练使用 Axure、Xmind、Visio、Figma 等",
+        "竞品分析与市场/用户调研，输出产品功能演进路线与迭代规划",
+        "0-1 产品或中大型产品模块规划落地经验（B端/C端均可）",
+        "跨职能协作：与开发、设计、测试紧密配合，管理研发过程、把控进度与质量",
+        "数据驱动决策：产品运营数据分析、埋点/漏斗监测，用数据优化产品与用户体验",
+        "产品全生命周期管理：需求管理、变更控制、上线排期、复盘与持续优化"
+      ],
+      "nice_to_have": [
+        "Figma",
+        "数据分析",
+        "SQL",
+        "商业化",
+        "B端",
+        "C端",
+        "SaaS",
+        "用户增长",
+        "AI产品",
+        "企业级服务/研发管理平台/云计算/安全背景优先",
+        "有完整的从0到1产品项目经验或大型 B 端产品研发经验",
+        "负责产品对外推广宣讲、产品培训与商业化落地",
+        "了解前端/客户端技术（JavaScript、Android、iOS、小程序、H5）便于与研发对齐",
+        "具备行业垂直领域认知（政务、金融、游戏、电商等）"
+      ],
+      "keywords": [
+        "需求管理",
+        "产品规划",
+        "用户体验",
+        "跨部门协作",
+        "数据驱动",
+        "商业价值",
+        "迭代优化",
+        "需求分析",
+        "PRD",
+        "Axure",
+        "Xmind",
+        "Visio",
+        "竞品分析",
+        "产品设计",
+        "原型设计",
+        "用户研究",
+        "迭代管理",
+        "B端产品"
+      ],
+      "responsibilities": [
+        "需求调研与分析",
+        "产品方案设计与原型",
+        "撰写 PRD 推进研发落地",
+        "数据分析驱动迭代",
+        "负责产品线/模块的规划、设计与落地，输出原型与 PRD，协调设计开发测试推动发布",
+        "深度用户需求调研与竞品分析，将模糊需求转化为可执行的产品方案并管理需求变更",
+        "跟踪产品市场表现与用户行为数据，持续打磨体验、提升核心指标"
+      ],
+      "soft_skills": [
+        "沟通协调",
+        "同理心",
+        "结果导向",
+        "抗压",
+        "全局思维",
+        "逻辑清晰、优秀的分析与解决问题能力",
+        "良好的沟通理解与跨部门协调、冲突解决能力",
+        "强自我驱动力、责任心与抗压能力"
+      ],
+      "salary_band": "15k-35k/月（一线，3-5年）；资深/平台型可达 35k-60k"
+    },
+    {
+      "role": "qa",
+      "label": "测试开发工程师 / QA",
+      "aliases": [
+        "测试",
+        "测试工程师",
+        "qa",
+        "自动化测试",
+        "软件测试",
+        "测试开发"
+      ],
+      "must_have": [
+        "测试用例",
+        "功能测试",
+        "自动化测试",
+        "Selenium",
+        "接口测试",
+        "Python",
+        "缺陷管理",
+        "SQL",
+        "Python 或 Java 至少精通一门，能独立编写自动化脚本与测试工具",
+        "UI 自动化框架：Selenium / Playwright / Appium，理解 PO 模式与设计思想",
+        "单元测试框架：pytest / JUnit，接口自动化（HTTP / gRPC / WebSocket，requests / MeterSphere / Apifox）",
+        "CI/CD 集成：Jenkins / GitLab CI，质量门禁设计与自动化深度融入研发交付",
+        "性能测试：JMeter / Locust / LoadRunner 压测与瓶颈分析",
+        "数据库：MySQL / PostgreSQL 复杂 SQL 编写与数据校验",
+        "Linux 与 Shell 脚本、Docker 容器化部署",
+        "测试框架深度定制与分层回归、快速质量反馈机制建设"
+      ],
+      "nice_to_have": [
+        "Pytest",
+        "JMeter",
+        "性能测试",
+        "Appium",
+        "Postman",
+        "CI/CD",
+        "Jenkins",
+        "Linux",
+        "白盒测试",
+        "AI 辅助测试：Cursor / Copilot 融入日常，Prompt Engineering 生成用例",
+        "测试平台与效能工具研发（用例管理 / 数据工厂 / 执行调度，TaaS）",
+        "安全测试集成：OWASP ZAP / Burp Suite、SonarQube 代码质量、Allure 报告",
+        "流量回放、Mock 服务（Moco / WireMock）、监控（Prometheus）",
+        "前端（HTML/JS/CSS）与后端（Spring Boot / Flask）基础，能代码层定位问题"
+      ],
+      "keywords": [
+        "测试计划",
+        "自动化框架",
+        "回归测试",
+        "质量保障",
+        "缺陷跟踪",
+        "接口/性能测试",
+        "自动化测试",
+        "pytest",
+        "Selenium",
+        "接口测试",
+        "CI/CD",
+        "性能测试",
+        "Appium",
+        "测试框架",
+        "质量门禁",
+        "JMeter",
+        "Docker",
+        "测开",
+        "Playwright",
+        "测试左移",
+        "QAOps"
+      ],
+      "responsibilities": [
+        "测试用例设计与执行",
+        "自动化测试框架搭建",
+        "接口与性能测试",
+        "缺陷跟踪与质量保障",
+        "设计与落地覆盖 Web / 移动端 / API 的全栈自动化测试方案，主导统一测试框架与 CI/CD 深度集成",
+        "研发测试平台与效能工具，推进测试能力服务化（TaaS）与测试左移右移",
+        "建设研发效能与质量度量体系，以数据驱动流程改进与发布稳定性"
+      ],
+      "soft_skills": [
+        "细致严谨",
+        "协作",
+        "问题定位",
+        "沟通协作与跨团队（开发 / 产品）推进能力",
+        "优秀的问题分析与定位能力",
+        "技术文档撰写与内部培训能力"
+      ],
+      "salary_band": "15k-35k/月（一线，高级/资深年薪 30万-50万+）"
+    },
+    {
+      "role": "devops",
+      "label": "DevOps / SRE 工程师",
+      "aliases": [
+        "运维",
+        "devops",
+        "sre",
+        "运维工程师",
+        "系统运维",
+        "云计算工程师",
+        "运维开发",
+        "平台工程"
+      ],
+      "must_have": [
+        "Linux",
+        "Docker",
+        "Kubernetes",
+        "Shell",
+        "CI/CD",
+        "Nginx",
+        "监控",
+        "Python",
+        "网络",
+        "精通 Linux 系统管理与 TCP/IP 协议，具备系统调优与资源治理能力",
+        "精通 Kubernetes 架构，熟悉 Helm/Kustomize、Istio、CRI/CNI 等核心组件",
+        "熟练搭建可观测性体系：Prometheus/Grafana/Alertmanager、ELK/OpenSearch、OpenTelemetry、APM/链路追踪",
+        "独立维护 CI/CD 流水线（Jenkins / GitLab CI / Argo CD / Tekton）与制品库（Harbor/Nexus）",
+        "至少掌握一门编程语言（Go/Python/Bash）进行工具开发与自动化脚本",
+        "熟悉云平台（AWS/阿里云/腾讯云）核心组件：IAM、VPC、安全组、容器服务（ACK/EKS）",
+        "定义并跟踪 SLI/SLO，建立告警策略、值班机制与故障应急响应复盘"
+      ],
+      "nice_to_have": [
+        "Prometheus",
+        "Grafana",
+        "Terraform",
+        "Ansible",
+        "Jenkins",
+        "云平台",
+        "ELK",
+        "自动化运维",
+        "高可用",
+        "熟悉基础设施即代码（Terraform / Ansible）与 GitOps 实践",
+        "具备多地域容灾、混沌工程与稳定性治理量化案例（如发布耗时 -30%）",
+        "了解 MLOps、AI Agent 架构或后端开发背景",
+        "持有 CKA/CKAD 认证，熟悉 Falco 等运行时安全与云原生安全体系",
+        "有 ClickHouse / Elasticsearch / Kafka 等大数据或日志链路运维经验"
+      ],
+      "keywords": [
+        "自动化部署",
+        "容器编排",
+        "监控告警",
+        "稳定性保障",
+        "故障处理",
+        "基础设施",
+        "可观测性",
+        "kubernetes",
+        "prometheus",
+        "grafana",
+        "ci/cd",
+        "devops",
+        "sre",
+        "docker",
+        "helm",
+        "observability",
+        "terraform",
+        "linux",
+        "gitops"
+      ],
+      "responsibilities": [
+        "系统部署与自动化运维",
+        "容器化与编排管理",
+        "监控告警与稳定性保障",
+        "CI/CD 流水线维护",
+        "建设可观测性与稳定性体系（监控/日志/链路追踪），设计并落地 SLI/SLO 与告警值班",
+        "搭建与维护 CI/CD 流水线与容器平台，支撑蓝绿/灰度/金丝雀发布与多区域容灾",
+        "通过自动化脚本与平台化工具提升发布与排障效率，推动 FinOps 降本增效"
+      ],
+      "soft_skills": [
+        "抗压",
+        "应急处理",
+        "协作",
+        "自动化意识",
+        "压力下快速定位并闭环问题的能力",
+        "跨团队沟通推动力与良好文档沉淀习惯"
+      ],
+      "salary_band": "15k-60k/月（一线，中级至专家）"
+    },
+    {
+      "role": "ui_designer",
+      "label": "UI 设计师",
+      "aliases": [
+        "ui",
+        "ui设计",
+        "视觉设计",
+        "ui设计师",
+        "交互设计",
+        "产品设计师",
+        "界面设计"
+      ],
+      "must_have": [
+        "Figma",
+        "Sketch",
+        "Photoshop",
+        "UI设计",
+        "交互设计",
+        "设计规范",
+        "视觉设计",
+        "原型",
+        "精通 Figma / Sketch，熟练使用 Photoshop / Illustrator / XD 等主流设计工具",
+        "掌握 iOS / Android / 鸿蒙 / Web / Windows / Mac 多平台设计规范",
+        "能输出高保真原型、界面视觉设计与系统化组件库（Design System）",
+        "具备扎实的视觉设计功底：色彩搭配、排版布局、图标绘制、控件风格定义",
+        "熟悉组件库 / 图标库建设，确保跨设备、跨版本设计一致性",
+        "能与产品、前端开发紧密配合，输出标注文档保障设计高还原度落地",
+        "提交成熟的作品集（链接或 PDF），体现完整项目与设计思维"
+      ],
+      "nice_to_have": [
+        "Axure",
+        "AE",
+        "C4D",
+        "设计系统",
+        "用户体验",
+        "动效",
+        "插画",
+        "品牌设计",
+        "熟悉 AE / Lottie 制作微交互动效",
+        "有 Design System 设计系统搭建经验",
+        "了解前端基础（HTML/CSS），能与开发高效沟通",
+        "熟练使用 AIGC 工具辅助设计（Midjourney 探索风格稿）",
+        "熟悉 Blender / C4D / 3D 或手绘能力"
+      ],
+      "keywords": [
+        "视觉还原",
+        "设计规范",
+        "组件库",
+        "用户体验",
+        "交互流程",
+        "高保真原型",
+        "Figma",
+        "Sketch",
+        "Photoshop",
+        "Design System",
+        "UI界面设计",
+        "iOS/Android规范",
+        "AE/Lottie",
+        "视觉设计",
+        "作品集"
+      ],
+      "responsibilities": [
+        "产品界面视觉设计",
+        "交互流程与原型设计",
+        "设计规范与组件库维护",
+        "与产品/前端协作落地",
+        "负责 Web/PC/App/小程序等端 UI 界面设计，输出高保真原型与视觉规范",
+        "主导设计语言制定、设计规范与组件化体系建设，维护设计系统",
+        "与产品、UX、开发协作推动设计落地，持续优化多端用户体验"
+      ],
+      "soft_skills": [
+        "审美",
+        "沟通",
+        "同理心",
+        "细致",
+        "追求细节、对效率工具与用户体验充满热情",
+        "能平衡业务需求与用户体验，具备用户思维与产品思维",
+        "良好的跨团队沟通与协作能力，责任心强"
+      ],
+      "salary_band": "12k-30k/月（一线，高级可达20k-35k·13薪）"
+    },
+    {
+      "role": "operations",
+      "label": "运营",
+      "aliases": [
+        "运营",
+        "新媒体运营",
+        "内容运营",
+        "用户运营",
+        "活动运营",
+        "产品运营",
+        "电商运营",
+        "社群运营"
+      ],
+      "must_have": [
+        "内容运营",
+        "用户运营",
+        "活动策划",
+        "数据分析",
+        "文案",
+        "增长",
+        "社群运营",
+        "社群搭建与日常维护（企微/微信群，提升活跃度与粘性）",
+        "用户画像构建与用户分层运营（标签体系、精细化触达）",
+        "活动策划与组织（线上/线下活动、节日营销、用户增长活动）",
+        "数据意识与数据分析能力（活跃、留存、转化、生命周期价值监控）",
+        "内容运营（新媒体文章、学习社区干货、答疑直播等优质内容生产）",
+        "私域流量运营与SOP输出（进粉沉淀、首转、精准触达）",
+        "运营方案与周报/月报/结项材料编制",
+        "自动化用户旅程设计（基于生命周期节点设计营销旅程）"
+      ],
+      "nice_to_have": [
+        "新媒体",
+        "短视频",
+        "SEO",
+        "私域",
+        "SQL",
+        "Excel",
+        "投放",
+        "用户画像",
+        "AB测试",
+        "A/B测试经验（测试不同旅程策略、触达内容、触达时机）",
+        "数据看板搭建与可视化（监控核心运营指标）",
+        "B端用户运营或成功运营案例",
+        "熟悉主流社群工具与企微SCRM"
+      ],
+      "keywords": [
+        "拉新促活",
+        "内容策划",
+        "数据复盘",
+        "用户增长",
+        "转化率",
+        "活动运营",
+        "留存",
+        "社群运营",
+        "用户分层",
+        "私域",
+        "活动策划",
+        "数据分析",
+        "用户画像",
+        "转化",
+        "生命周期价值",
+        "精细化运营",
+        "SOP",
+        "企业微信"
+      ],
+      "responsibilities": [
+        "内容/活动策划与执行",
+        "用户增长与留存运营",
+        "数据复盘与策略优化",
+        "跨部门协作推进",
+        "负责用户全生命周期运营（拉新、活跃、留存、转化），对核心增长指标负责",
+        "策划并执行线上线下运营活动，提升品牌影响力与用户参与度",
+        "私域流量沉淀与用户分层运营，通过精准SOP触达提升转化与复购",
+        "定期数据分析与运营效果复盘，输出报告并优化策略"
+      ],
+      "soft_skills": [
+        "创意",
+        "执行力",
+        "沟通",
+        "数据敏感",
+        "抗压",
+        "沟通协调能力",
+        "逻辑思维与资源整合能力",
+        "较强抗压能力"
+      ],
+      "salary_band": "8k-18k/月（一线，视行业与经验，不含绩效）"
+    },
+    {
+      "role": "android",
+      "label": "安卓开发工程师",
+      "aliases": [
+        "android",
+        "安卓",
+        "安卓开发",
+        "移动端开发",
+        "android开发"
+      ],
+      "must_have": [
+        "Android",
+        "Java",
+        "Kotlin",
+        "Jetpack",
+        "多线程",
+        "网络编程",
+        "性能优化",
+        "自定义View",
+        "精通 Java / Kotlin 开发，洞悉语言背后的实现原理",
+        "熟悉 Android SDK/NDK，掌握 Activity/Fragment、Jetpack 等组件体系",
+        "扎实的计算机基础：常用数据结构与算法，能在业务开发中灵活应用",
+        "理解 Android 内存管理与性能优化机制，熟练运用多线程技术",
+        "熟悉 RESTful 接口规范，具备对接后端接口与网络编程经验（HTTP 协议栈）",
+        "具备良好的架构与接口设计能力，熟练运用设计模式、面向对象原则",
+        "理解移动端 UI/UX 设计规范与 Android 完整研发、发布流程"
+      ],
+      "nice_to_have": [
+        "Flutter",
+        "Compose",
+        "NDK",
+        "组件化",
+        "热修复",
+        "RxJava",
+        "架构设计",
+        "熟悉 Android Framework 层（AMS/WMS/SurfaceFlinger/View/PackageManager/InputManager）",
+        "有跨平台/动态化方案经验：React Native / Flutter / 小程序",
+        "有音视频开发或动画渲染经验",
+        "熟悉公司内动态化容器、监控体系、鸿蒙（ArkTS）方向",
+        "了解一种后端语言（Java/Python）或大模型应用（LangChain）"
+      ],
+      "keywords": [
+        "移动端架构",
+        "性能优化",
+        "内存优化",
+        "组件化",
+        "用户体验",
+        "Android",
+        "Kotlin",
+        "Java",
+        "Jetpack",
+        "MVVM",
+        "SDK/NDK",
+        "多线程",
+        "RESTful",
+        "设计模式",
+        "Flutter",
+        "动态化"
+      ],
+      "responsibilities": [
+        "Android 客户端开发与迭代",
+        "性能与稳定性优化",
+        "架构与组件化建设",
+        "负责 Android 端产品研发、高质量编码与重难点技术攻坚",
+        "负责端侧技术架构设计、组件建设与品质/性能优化",
+        "与产品、后端协作深度参与需求讨论，对客户端质量与体验负责"
+      ],
+      "soft_skills": [
+        "协作",
+        "抗压",
+        "学习能力",
+        "严谨的逻辑思维与良好的沟通协调能力",
+        "产品意识强、执行力好，乐于协作",
+        "对新技术敏感，具备快速学习与适应能力"
+      ],
+      "salary_band": "20k-45k/月（一线，高级/专家可达35k-45k·15薪）"
+    },
+    {
+      "role": "ios",
+      "label": "iOS 开发工程师",
+      "aliases": [
+        "ios",
+        "ios开发",
+        "苹果开发",
+        "移动端ios",
+        "Swift"
+      ],
+      "must_have": [
+        "iOS",
+        "Swift",
+        "Objective-C",
+        "UIKit",
+        "多线程",
+        "网络编程",
+        "性能优化",
+        "精通 Objective-C 与 Swift 开发，理解语言底层实现原理",
+        "熟悉 iOS 系统架构及主流框架（UIKit / SwiftUI 等）",
+        "深入理解 Objective-C Runtime、内存管理机制（ARC/MRC）及 iOS 底层原理",
+        "扎实的计算机基础：数据结构与算法、操作系统（线程/内存/文件）",
+        "熟练进行网络编程，对 HTTP 协议栈有深入认知",
+        "具备良好的架构与接口设计能力，熟练运用设计模式、SOLID 原则",
+        "熟悉多线程编程、组件化与 CI/CD、单元测试等工程实践"
+      ],
+      "nice_to_have": [
+        "SwiftUI",
+        "组件化",
+        "Flutter",
+        "架构设计",
+        "热修复",
+        "音视频",
+        "具备一定 C++ 开发能力",
+        "有 Flutter / Kotlin Multiplatform（KMP/CMP）跨平台经验",
+        "熟悉 JavaScript/HTML/CSS/HTTP 与移动端 Web/小程序容器开发",
+        "研究过优秀开源软件源码，具备极客精神与代码洁癖",
+        "熟悉 AI 编程工具（Copilot / Cursor）或金融基础知识"
+      ],
+      "keywords": [
+        "移动端架构",
+        "性能优化",
+        "内存管理",
+        "用户体验",
+        "iOS",
+        "Swift",
+        "Objective-C",
+        "UIKit",
+        "SwiftUI",
+        "Runtime",
+        "组件化",
+        "CI/CD",
+        "多线程",
+        "设计模式",
+        "Flutter"
+      ],
+      "responsibilities": [
+        "iOS 客户端开发与迭代",
+        "性能与稳定性优化",
+        "架构与组件化建设",
+        "负责 iOS 端功能集技术方案设计、业务开发与重难点问题攻坚",
+        "持续参与所负责功能集的架构演进，保障代码健康度与工程质量",
+        "参与工程效能建设（CI/CD、自动化测试），提升开发效率与软件质量"
+      ],
+      "soft_skills": [
+        "协作",
+        "抗压",
+        "学习能力",
+        "良好的逻辑思维与问题解决能力",
+        "优秀的团队合作精神与沟通能力",
+        "在敏捷团队有实际经验，具备自驱力与技术热情"
+      ],
+      "salary_band": "20k-42k/月（一线，资深可达35k-42k·15薪）"
+    },
+    {
+      "role": "cpp",
+      "label": "C++ 开发工程师",
+      "aliases": [
+        "C++",
+        "CPP",
+        "后台C++"
+      ],
+      "must_have": [
+        "精通 C++11 及以上标准，熟悉模板编程、智能指针、多线程、异步编程与性能调优",
+        "深入理解 Linux 操作系统原理、TCP/IP 协议、HTTP/2、内存模型与锁机制",
+        "熟悉 Linux 下 C/C++ 后台服务开发，具备高并发、低延迟系统设计能力",
+        "熟悉 gRPC / BRPC 等 RPC 框架、Kafka 消息队列、Redis 缓存等中间件",
+        "熟练运用性能分析工具（perf / pprof / FlameGraph）定位 CPU/内存/网络瓶颈",
+        "理解分布式系统设计理念，具备微服务治理经验（服务发现、熔断降级、分布式追踪）者优先"
+      ],
+      "nice_to_have": [
+        "熟悉底层 IO 技术：SPDK、io_uring、RDMA、NVMe 等存储加速技术",
+        "有 Ceph / HDFS / GFS / GlusterFS / Lustre 等分布式存储系统研发经验",
+        "了解 Raft / Paxos 等共识协议与分布式一致性",
+        "熟悉 Redis / LevelDB / InnoDB 等存储引擎原理",
+        "了解 eBPF 等内核观测技术用于性能调优"
+      ],
+      "keywords": [
+        "c++",
+        "linux",
+        "multithreading",
+        "grpc",
+        "brpc",
+        "high concurrency",
+        "distributed storage",
+        "tcp/ip",
+        "performance tuning",
+        "kafka",
+        "redis"
+      ],
+      "responsibilities": [
+        "负责高并发、低延迟核心后端服务的设计、开发与维护（如广告/搜索/推荐/存储系统）",
+        "牵头关键技术攻坚，持续系统性能优化，解决海量请求下的吞吐、延迟与稳定性问题",
+        "搭建高可用分布式架构，实现负载均衡、故障自动转移与弹性扩缩容"
+      ],
+      "soft_skills": [
+        "复杂系统性能问题的拆解与攻关能力",
+        "责任心与跨团队协作推动落地"
+      ],
+      "salary_band": "20k-50k/月（一线，大厂后台/存储方向）"
+    },
+    {
+      "role": "microservices",
+      "label": "微服务架构师",
+      "aliases": [
+        "微服务",
+        "架构师",
+        "服务架构"
+      ],
+      "must_have": [
+        "8-10 年以上后端/架构经验，3 年以上微服务架构主导经验，有大型系统重构或从 0-1 落地经验",
+        "精通 Java/Spring Boot/Spring Cloud 或 Go 生态，熟悉服务治理与 API 网关体系",
+        "掌握分布式系统设计：分库分表、分布式事务（Seata / 最终一致性）、消息驱动（Kafka/RocketMQ）",
+        "具备 DDD 领域建模、服务拆分、技术选型与架构蓝图设计能力",
+        "熟悉消息、缓存、检索与 OLAP：Kafka、Redis、Elasticsearch、ClickHouse 等",
+        "建立高可用与可观测性体系：熔断限流、降级、灰度/蓝绿发布、链路追踪（SkyWalking/Zipkin）、日志与指标",
+        "精通云原生技术栈（Docker/K8s/Service Mesh），主导过传统架构向云原生转型"
+      ],
+      "nice_to_have": [
+        "熟悉 Istio / Linkerd 服务网格、Nacos / Consul / Zookeeper 注册治理",
+        "具备大数据流处理经验（Flink / Spark / Kafka Streams）",
+        "有流程引擎、决策引擎、模型服务、特征平台、知识图谱建设经验",
+        "持有 AWS/阿里云专家架构师认证或 TOGAF 认证、行业技术标准/专利",
+        "熟悉 Serverless、中台化、混沌工程等前沿架构理念"
+      ],
+      "keywords": [
+        "microservices",
+        "spring cloud",
+        "ddd",
+        "distributed transaction",
+        "service mesh",
+        "kubernetes",
+        "istio",
+        "high availability",
+        "observability",
+        "api gateway",
+        "seata"
+      ],
+      "responsibilities": [
+        "负责系统整体架构设计与路线规划：服务拆分、领域建模、技术选型与标准制定",
+        "建立高可用、可观测与微服务治理体系（注册发现、配置中心、API 网关、容灾）",
+        "指导团队落地架构蓝图、编码规范与性能/成本优化，组织评审与技术培训"
+      ],
+      "soft_skills": [
+        "优秀的跨团队沟通与推动力（业务/研发/平台/运维达成共识）",
+        "技术领导力与架构前瞻性视野"
+      ],
+      "salary_band": "35k-70k/月（一线，资深/专家岗，常含 16 薪）"
+    },
+    {
+      "role": "dba",
+      "label": "数据库工程师 / DBA",
+      "aliases": [
+        "数据库",
+        "DBA",
+        "数据治理"
+      ],
+      "must_have": [
+        "3-5 年以上 DBA 经验，精通 MySQL（InnoDB）/ PostgreSQL 生产运维与核心原理",
+        "深入理解事务、锁、MVCC、WAL、Cost-based Optimizer、并行查询、分区表等原理与调优",
+        "掌握主从复制、逻辑/物理复制、高可用方案（MGR / Patroni / PgBouncer / Orchestrator）",
+        "精通 SQL 调优、索引优化、执行计划分析，能解决亿级数据表与高并发访问性能问题",
+        "熟悉数据库备份恢复（mysqldump / Xtrabackup / RMAN）与容灾、数据安全方案",
+        "熟悉 Redis 数据结构、持久化、哨兵与集群模式，了解 MongoDB / etcd 等 NoSQL",
+        "熟悉 Linux，能使用 Shell/Python/Go 编写自动化运维脚本，具备快速故障定位能力"
+      ],
+      "nice_to_have": [
+        "具备云数据库运维经验（AWS RDS / 阿里云 RDS / Azure Database）",
+        "有数据库安全治理经验：权限、脱敏、加密、审计、合规",
+        "持有 OCP / PGCA / ITIL 等认证",
+        "推动数据库 DevOps（IaC / CI/CD / 平台化自动化运维）",
+        "熟悉大数据量分库分表、数据归档与冷热分离存储"
+      ],
+      "keywords": [
+        "mysql",
+        "postgresql",
+        "innodb",
+        "redis",
+        "sql tuning",
+        "backup recovery",
+        "high availability",
+        "replication",
+        "mongodb",
+        "linux",
+        "database optimization"
+      ],
+      "responsibilities": [
+        "负责 MySQL/PostgreSQL 生产集群的架构设计、容量规划、部署、升级与迁移",
+        "制定并落地高可用、备份、容灾、监控、性能调优与 SQL 审计等体系化方案",
+        "主导重大故障应急响应，推进数据库自动化运维与数据安全/合规治理"
+      ],
+      "soft_skills": [
+        "良好的跨团队技术沟通与 SQL 代码审核能力",
+        "强烈责任心与 7x24 线上保障意识"
+      ],
+      "salary_band": "15k-40k/月（一线，3-8年经验）"
+    },
+    {
+      "role": "cloudnative",
+      "label": "云原生工程师",
+      "aliases": [
+        "云原生",
+        "容器",
+        "K8s",
+        "容器化"
+      ],
+      "must_have": [
+        "精通 Kubernetes 架构与生态（Etcd / Calico / Istio / Volcano），具备千节点级集群调优经验",
+        "深入理解 Docker Engine、Containerd、CRI/CSI/CNI，能开发自定义 Operator/Controller",
+        "熟练使用 Go / Python 进行运维开发，编写自动化工具、监控告警脚本与自定义组件",
+        "熟悉 Service Mesh（Istio）及其周边（Kiali / Prometheus / Jaeger / ELK / Grafana）",
+        "精通可观测性工具链：Prometheus / Grafana / ELK / OpenTelemetry，并能独立调优",
+        "熟悉 DevOps / GitOps 流程（Tekton / Argo CD / GitLab CI）与云原生产品（ACK/EKS）",
+        "具备云原生安全防护能力：镜像扫描、RBAC、网络策略、运行时安全（Falco）"
+      ],
+      "nice_to_have": [
+        "有 eBPF 可观测开发经验（perf / ftrace / 网络全链路追踪 / 持续 profiling）",
+        "熟悉 K8s GPU/NPU 调度（vgpu / device-plugin）、多集群/多云/混合云管理",
+        "了解 WASM、Envoy 扩展（lua/wasm filter）或 Service Mesh 二次开发",
+        "有开源社区贡献、阅读云原生组件源码经验",
+        "熟悉缓存网格（Cache Mesh）/ 数据网格（DB Mesh）/ 消息网格（Message Mesh）泛网格化"
+      ],
+      "keywords": [
+        "kubernetes",
+        "docker",
+        "istio",
+        "service mesh",
+        "cloud native",
+        "operator",
+        "prometheus",
+        "helm",
+        "ebpf",
+        "gitops",
+        "containerd",
+        "observability"
+      ],
+      "responsibilities": [
+        "负责基于 Kubernetes / Istio 的容器平台与 Service Mesh 架构设计、技术攻关与线上维护",
+        "建设千节点级集群的稳定性保障、性能调优（APIServer 负载、etcd 压力、调度优化）",
+        "推动云原生泛网格化 PaaS 平台落地与可观测/安全体系建设，培养团队成员成长"
+      ],
+      "soft_skills": [
+        "较强的自我驱动能力与跨团队沟通协作",
+        "结果导向，能高效定位并解决线上复杂问题"
+      ],
+      "salary_band": "20k-60k/月（一线，资深/专家岗）"
+    },
+    {
+      "role": "client",
+      "label": "客户端开发工程师",
+      "aliases": [
+        "客户端",
+        "C++客户端",
+        "Electron",
+        "跨平台客户端"
+      ],
+      "must_have": [
+        "精通 C/C++ 开发，具备扎实的代码编写与设计能力（或 Rust/Objective-C 之一）",
+        "有 Windows / macOS / Linux 至少一端原生客户端开发经验，熟悉原生界面渲染机制",
+        "熟悉跨平台框架之一：Electron / Chromium / CEF / QT / Flutter",
+        "深入理解计算机体系结构、操作系统原理与网络协议（HTTP/TCP/UDP）",
+        "精通多线程/多进程编程与内存管理，能解决渲染掉帧、内存泄漏等问题",
+        "具备桌面端复杂交互实现能力与跨平台部署经验",
+        "扎实的数据结构与算法基础，良好的编码习惯与工程质量意识"
+      ],
+      "nice_to_have": [
+        "熟悉 Chromium 架构、V8 / Node Addon、React Native 等前端底层技术",
+        "有浏览器渲染引擎（Chromium/CEF）优化经验",
+        "熟悉 C++ 编译原理、反编译/逆向工程经验",
+        "有音视频相关开发经验",
+        "熟悉 WebGPU / WebAssembly 或端侧 AI Agent 集成"
+      ],
+      "keywords": [
+        "C++",
+        "Electron",
+        "Chromium",
+        "CEF",
+        "QT",
+        "跨平台",
+        "多线程/多进程",
+        "内存管理",
+        "渲染引擎",
+        "Rust",
+        "Objective-C",
+        "V8"
+      ],
+      "responsibilities": [
+        "负责跨平台桌面/客户端产品研发，参与架构设计与业务模块实现",
+        "进行客户端性能优化（冷启动、渲染卡顿、内存占用、弱网传输）",
+        "参与技术中台、组件与 SDK 的设计研发，沉淀多端复用逻辑"
+      ],
+      "soft_skills": [
+        "良好的团队合作精神与主动沟通意识",
+        "强烈求知欲与学习能力，关注业界最新技术",
+        "质量意识强，能持续重构优化代码"
+      ],
+      "salary_band": "20k-40k/月（一线，资深/专家可达30k-50k·15薪）"
+    },
+    {
+      "role": "ux",
+      "label": "交互设计师 / UX",
+      "aliases": [
+        "UX",
+        "交互",
+        "UE",
+        "交互设计"
+      ],
+      "must_have": [
+        "精通用户研究方法：用户访谈、问卷、可用性测试、人物画像与用户旅程地图",
+        "具备信息架构设计能力，能规划导航、流程与清晰的信息组织方式",
+        "熟练使用原型工具：Figma / Sketch / Axure / Principle / XD 制作线框与可交互原型",
+        "扎实的交互设计逻辑与流程闭环能力，能独立完成业务线交互设计",
+        "具备数据分析能力，能用 A/B 测试、用户行为数据验证并优化设计方案",
+        "熟悉移动端、桌面端、网站等多终端平台设计规范",
+        "具备同理心与系统性思维，能站在用户角度拆解问题、定义方案"
+      ],
+      "nice_to_have": [
+        "有 0-1 / 改版 / 重构等大型项目主导经验",
+        "具备基本英语阅读能力，能输出多语言设计方案",
+        "熟悉 AI / AR-VR 等新兴场景的交互设计",
+        "有跨团队协作推动设计规范体系搭建、参与企业级体验标准制定经验",
+        "大厂背景或完整设计流程作品集"
+      ],
+      "keywords": [
+        "用户研究",
+        "信息架构",
+        "交互原型",
+        "Axure",
+        "Figma",
+        "可用性测试",
+        "用户画像",
+        "用户旅程地图",
+        "数据分析",
+        "A/B测试",
+        "交互设计",
+        "Design System"
+      ],
+      "responsibilities": [
+        "负责 B/C 端核心产品交互设计与用户体验优化，对最终体验与效果负责",
+        "全链路参与产品策划落地，拆解目标、制定设计策略并提供交互解决方案",
+        "通过用户研究与数据分析评估方案，参与设计系统交互规范制定与迭代"
+      ],
+      "soft_skills": [
+        "极强同理心，能深入洞察用户真实需求而非主观臆断",
+        "逻辑归纳与结构化表达能力，跨角色高效协作推进",
+        "良好共情与沟通，能清晰阐述设计思路并与产品/开发对齐"
+      ],
+      "salary_band": "15k-30k/月（一线，资深可达18k-35k·15薪）"
+    },
+    {
+      "role": "visual",
+      "label": "视觉设计师",
+      "aliases": [
+        "视觉",
+        "平面设计",
+        "品牌视觉"
+      ],
+      "must_have": [
+        "精通 Adobe 系列：Photoshop / Illustrator / InDesign 等平面设计软件",
+        "掌握 C4D / Blender 至少一款 3D 建模软件及 OC / Redshift / Keyshot 等渲染器",
+        "具备品牌视觉识别系统（VI）建设能力：主视觉符号、色彩体系、字体规范、图形延展",
+        "扎实的平面设计功底：排版、色彩、字体设计原理与商业转化思维",
+        "有品牌平面/电商/运营物料设计经验（详情页、主图、海报、Banner、KV 等）",
+        "具备美术功底与审美、创意构思能力，能结合市场趋势优化素材",
+        "提交成熟作品集，体现品牌项目与商业化落地能力"
+      ],
+      "nice_to_have": [
+        "熟练使用 AIGC 工具：Midjourney / Stable Diffusion / Flair 辅助创意",
+        "掌握 AE / PR 动态视觉与宣传视频剪辑能力",
+        "具备插画与手绘能力（Procreate / 数位板 / 国潮等风格）",
+        "熟悉前端基础（HTML/CSS）或 UI/UX 设计，能与多团队联动",
+        "有海外社媒（Behance / Dribbble / Pinterest）视觉趋势敏感度"
+      ],
+      "keywords": [
+        "Photoshop",
+        "Illustrator",
+        "C4D",
+        "Blender",
+        "品牌视觉VI",
+        "平面设计",
+        "3D渲染",
+        "AE/PR动效",
+        "Midjourney",
+        "插画",
+        "电商视觉",
+        "作品集"
+      ],
+      "responsibilities": [
+        "将品牌策略转化为视觉语言，主导建立品牌视觉识别系统（VI）与视觉手册",
+        "负责线上线下宣传物料、电商视觉、KV/海报/详情页等创意设计与落地",
+        "联动运营/策划团队输出创意方案，沉淀品牌视觉资产并推动设计标准化"
+      ],
+      "soft_skills": [
+        "市场洞察力，能预判视觉趋势并转化为具象视觉符号",
+        "品牌营销思维，能将设计决策与品牌战略对齐",
+        "跨部门协作意识与抗压能力，对行业趋势敏感、具备创新落地能力"
+      ],
+      "salary_band": "10k-25k/月（一线，资深/品牌负责人可达15k-30k·13薪）"
+    },
+    {
+      "role": "ml",
+      "label": "机器学习工程师",
+      "aliases": [
+        "ML",
+        "机器学习",
+        "建模",
+        "机器学习开发"
+      ],
+      "must_have": [
+        "扎实的机器学习与统计建模理论（SVM、XGBoost、Random Forest、集成学习、偏差方差权衡）",
+        "精通 Python，熟悉 pandas/numpy/scikit-learn、XGBoost/LightGBM 等库",
+        "熟悉 PyTorch/TensorFlow 等深度学习框架，能做模型设计与调优",
+        "端到端模型开发与部署经验（KServe、ONNX、模型服务化）",
+        "熟悉特征工程、数据预处理、ML pipeline 设计与模型评估（AUC、F1、Precision/Recall）",
+        "具备 MLOps 基础：Airflow/MLflow 实验管理、模型监控与 A/B 测试",
+        "熟悉 SQL 与大数据处理（Spark/PySpark）",
+        "了解云平台上模型部署（AWS/Azure/GCP）"
+      ],
+      "nice_to_have": [
+        "深度学习专项（Transformer、多任务、迁移学习、大模型微调 LoRA/QLoRA）",
+        "风控/反欺诈/推荐等垂直场景建模经验",
+        "模型压缩、蒸馏、量化等推理优化技巧",
+        "Kaggle/天池竞赛获奖与技术影响力（博客、HuggingFace 贡献）"
+      ],
+      "keywords": [
+        "Python",
+        "scikit-learn",
+        "XGBoost",
+        "特征工程",
+        "模型部署",
+        "PyTorch",
+        "MLOps",
+        "MLflow",
+        "Spark",
+        "A/B测试",
+        "ONNX",
+        "统计建模"
+      ],
+      "responsibilities": [
+        "设计、构建并部署机器学习模型解决实际业务问题（如风控、欺诈检测、预测）",
+        "开展特征工程、数据分析与 A/B 测试，持续提升模型效果与业务指标",
+        "与数据工程、软件工程团队协作，将模型集成到生产系统并监控优化",
+        "跟踪 ML/LLM 前沿技术并应用于业务落地"
+      ],
+      "soft_skills": [
+        "问题拆解与解决能力",
+        "技术表达与跨团队协作能力",
+        "对业务背景的理解与快速学习能力"
+      ],
+      "salary_band": "25k-55k/月（一线）"
+    },
+    {
+      "role": "cv",
+      "label": "计算机视觉工程师",
+      "aliases": [
+        "CV",
+        "视觉算法",
+        "图像",
+        "视觉算法工程师"
+      ],
+      "must_have": [
+        "扎实的计算机视觉与图像处理理论基础（目标检测、图像分割、分类、跟踪）",
+        "熟练使用 Python/C++ 编程，熟悉 OpenCV、PCL 等计算机视觉库",
+        "深入掌握主流视觉算法：YOLO、Mask R-CNN、SSD 等检测/分割框架",
+        "熟练使用 PyTorch/TensorFlow 等深度学习框架，理解 CNN/RNN/LSTM/GAN",
+        "熟悉模型部署与加速：TensorRT、OpenVINO、模型量化、边缘端（Jetson）部署",
+        "熟悉工业相机/深度相机标定、点云处理、SLAM 等三维视觉技术",
+        "具备从算法研发到实际工程部署的全流程落地能力",
+        "良好的数学功底与英文文献阅读能力"
+      ],
+      "nice_to_have": [
+        "顶会论文（CVPR/ICCV/ECCV）或视觉竞赛奖项",
+        "机器人/机械臂视觉、三维重建、位姿估计经验",
+        "大模型视觉（ViT、MLLM、视觉大模型）研发经验",
+        "强化学习在机器人控制中的应用"
+      ],
+      "keywords": [
+        "OpenCV",
+        "目标检测",
+        "图像分割",
+        "YOLO",
+        "PyTorch",
+        "TensorRT",
+        "模型量化",
+        "深度学习",
+        "计算机视觉",
+        "Mask R-CNN",
+        "SLAM",
+        "边缘部署"
+      ],
+      "responsibilities": [
+        "负责视觉算法研发与优化（检测、识别、分割、跟踪、三维重建等），赋能业务感知能力",
+        "主导视觉算法在边缘/嵌入式设备的部署与加速（TensorRT/OpenVINO/量化），保障实时性与鲁棒性",
+        "解决实际应用难题（光照变化、目标遮挡）并持续优化算法性能",
+        "编写技术文档，配合硬件选型与工程落地"
+      ],
+      "soft_skills": [
+        "工程实践能力与独立交付能力",
+        "团队协作与沟通能力",
+        "问题分析与创新能力"
+      ],
+      "salary_band": "30k-60k/月（一线，资深更高）"
+    },
+    {
+      "role": "nlp",
+      "label": "NLP 工程师",
+      "aliases": [
+        "自然语言处理",
+        "语言模型",
+        "NLP算法"
+      ],
+      "must_have": [
+        "扎实的 NLP 理论基础（文本预处理、评估指标、分词/词性/句法语义）",
+        "深入理解 Transformer、BERT、GPT/T5/GLM/LLaMA 等预训练语言模型原理",
+        "熟悉文本分类、NER、实体抽取、关系识别、意图识别、情感分析、语义匹配等任务",
+        "熟练使用 PyTorch/TensorFlow 与 NLP 开源框架（HuggingFace、HanLP 等）",
+        "熟悉大模型微调与应用（Prompt 工程、RAG、SFT、Agent、持续预训练）",
+        "掌握 SQL 与大数据处理（Hadoop/Spark/Hive/Flink）用于语料与特征处理",
+        "具备良好编程能力（Python，C++ 优先）与独立建模落地能力",
+        "熟练阅读英文文献，有序列建模（Seq2Seq、Attention、Mamba、word2vec）经验"
+      ],
+      "nice_to_have": [
+        "顶会论文（ACL/NAACL/EMNLP/COLING）或 NLP 竞赛名次",
+        "知识图谱建设（实体/关系/分类）与问答/对话系统经验",
+        "AIGC 产品落地、信息检索（搜索/NLU）背景",
+        "电商/垂直领域 NLP 落地经验"
+      ],
+      "keywords": [
+        "NLP",
+        "BERT",
+        "Transformer",
+        "命名实体识别",
+        "文本分类",
+        "知识图谱",
+        "HuggingFace",
+        "大模型微调",
+        "RAG",
+        "意图识别",
+        "PyTorch",
+        "语义理解"
+      ],
+      "responsibilities": [
+        "负责 NLP 核心算法研发（NLU/NLG、阅读理解、意图识别、情感分析、问答/对话）",
+        "建设知识图谱（实体抽取、关系识别、同品匹配）并推动前沿 NLP 技术落地",
+        "结合大模型（SFT/持续预训练/RAG）优化业务场景下的语义理解与内容分发",
+        "负责模型封装上线等工程开发与维护"
+      ],
+      "soft_skills": [
+        "跨部门沟通与交付能力",
+        "创新思维与业务理解",
+        "团队协作精神"
+      ],
+      "salary_band": "30k-60k/月（一线）"
+    },
+    {
+      "role": "recsys",
+      "label": "推荐算法工程师",
+      "aliases": [
+        "推荐",
+        "推荐系统",
+        "召回",
+        "排序",
+        "搜推算法"
+      ],
+      "must_have": [
+        "深入理解推荐/搜索/广告系统全链路：召回-粗排-精排-重排",
+        "熟悉召回架构：双塔模型、Faiss、树索引、ANN 检索",
+        "熟悉精排/重排模型（LR、GBDT、FM、DeepFM、DIN/DIEN、MMoE、Attention）",
+        "扎实的特征工程与用户行为建模能力（用户画像、商品/内容特征、序列建模）",
+        "熟练使用 Linux/Python/Java/Shell/SQL 开发",
+        "熟悉大规模深度学习（强化学习、迁移学习、图神经网络 GNN）",
+        "具备大流量/超大规模电商场景实际算法落地经验",
+        "熟悉 Hadoop/Spark/Flink/Kafka 等大数据生态处理用户行为数据"
+      ],
+      "nice_to_have": [
+        "顶会论文（SIGKDD/ICML/NeurIPS/WSDM/WWW/RECSYS/ACL）",
+        "算法竞赛经历（ICPC、Topcoder、Kaggle、KDD Cup）",
+        "多模态/预训练大模型在推荐中的应用经验",
+        "短视频/直播/搜索业务理解与生态优化经验",
+        "LLM 辅助特征生成、用户意图理解落地"
+      ],
+      "keywords": [
+        "推荐系统",
+        "召回",
+        "排序",
+        "精排",
+        "重排",
+        "双塔模型",
+        "Faiss",
+        "DeepFM",
+        "特征工程",
+        "CTR/CVR",
+        "Spark",
+        "图神经网络"
+      ],
+      "responsibilities": [
+        "负责推荐/搜索场景下召回、排序、重排算法设计与落地，提升点击率、转化率等核心指标",
+        "构建用户画像与商品/内容特征，开展特征工程与序列建模挖掘用户兴趣",
+        "跟踪推荐前沿（大模型推荐、多模态、因果推断）并推动技术升级",
+        "针对超大流量场景优化搜推链路精度、多样性与相关性"
+      ],
+      "soft_skills": [
+        "业务 sense 与指标驱动思维",
+        "团队合作与沟通能力",
+        "对挑战性问题的热情与学习能力"
+      ],
+      "salary_band": "35k-90k/月（一线，京东等 60-90K·19薪）"
+    },
+    {
+      "role": "aigc",
+      "label": "AIGC / 多模态工程师",
+      "aliases": [
+        "多模态",
+        "生成式AI",
+        "扩散模型",
+        "Diffusion",
+        "文生图",
+        "AIGC算法"
+      ],
+      "must_have": [
+        "深入理解 Diffusion Model（DDPM、Stable Diffusion、DiT）、GAN、VAE、Autoregressive 等生成模型原理",
+        "熟悉多模态大模型（VLM）与端到端多模态生成式大模型训练调优",
+        "熟练使用 PyTorch 等深度学习框架，熟悉 Python/C++ 与 Linux 开发",
+        "有文生图/图生图/视频生成/图像编辑等 AIGC 任务实际落地经验",
+        "掌握模型微调与可控生成技术（LoRA 训练、In-Context Learning、小样本）",
+        "熟悉 AIGC 应用开发工具（ComfyUI、WebUI）并能量身定制训练生成模型",
+        "了解模型加速与部署（TensorRT、量化、推理优化）",
+        "具备算法调研、复现与业务可用性评估优化能力"
+      ],
+      "nice_to_have": [
+        "顶会/顶刊论文（CVPR/ECCV/ICCV/NeurIPS/ICLR/ICML/PAMI/IJCV）",
+        "电商 AIGC 业务经验（AI 模特、AI 试穿、商品海报生成、3D 生成）",
+        "神经渲染（NeRF、Gaussian Splatting）与 3D 视觉基础",
+        "重要算法比赛优秀名次或 ACM 竞赛奖项",
+        "Multi-Agent、模型 Finetuning 在内容生成中的业务落地"
+      ],
+      "keywords": [
+        "Diffusion",
+        "Stable Diffusion",
+        "DiT",
+        "多模态",
+        "AIGC",
+        "GAN",
+        "VLM",
+        "ComfyUI",
+        "LoRA",
+        "文生图",
+        "视频生成",
+        "PyTorch"
+      ],
+      "responsibilities": [
+        "负责多模态/AIGC 生成算法研发（文本/图像/视频生成），解决生成质量、可控性与效率问题",
+        "端到端多模态生成式大模型框架设计、训练与调优，推动业务场景产品化落地",
+        "探索 AIGC 在电商/内容/游戏等场景的全新业务形态（如 AI 模特、风格化生成）",
+        "结合业务做指令优化、模型 Finetune 与性能加速，突破算法卡点"
+      ],
+      "soft_skills": [
+        "技术追求与表达沟通能力",
+        "创新实践与技术突破自驱力",
+        "业务审美与跨团队协作"
+      ],
+      "salary_band": "30k-60k/月（一线，资深/专家更高）"
+    },
+    {
+      "role": "data_pm",
+      "label": "数据产品经理",
+      "aliases": [
+        "数据产品",
+        "数据PM"
+      ],
+      "must_have": [
+        "埋点设计：独立完成埋点方案设计、标准化规范、上线验收与埋点治理",
+        "SQL 取数与数据分析：常用聚合、窗口函数，能自主完成数据提取、清洗、建模与分析",
+        "指标体系搭建：核心指标梳理、统一计算口径、维度建模、指标字典与血缘",
+        "A/B 实验平台：熟悉实验设计、分流、显著性检验与效果评估",
+        "BI 与数据可视化：Tableau、PowerBI、QuickBI 等报表/看板设计与标准化",
+        "数据建模与数据链路：熟悉数仓、数据湖、ETL、事件/用户模型",
+        "PRD 与数据产品原型：将业务需求拆解为数据需求，输出 PRD 与原型",
+        "数据治理与质量保障：监控埋点/指标稳定性、数据一致性，推动治理流程"
+      ],
+      "nice_to_have": [
+        "数据中台 / 数据湖 / 实时数仓建设经验",
+        "深度使用或研发过神策、数数科技、GrowingIO 等数据平台",
+        "用户标签体系 / 用户画像 / CDP / DMP 建设经验",
+        "AI 产品（推荐系统、风控模型）或大数据平台相关经验",
+        "熟悉无埋点技术、数据合规（GDPR/隐私）与权限模型设计"
+      ],
+      "keywords": [
+        "埋点",
+        "SQL",
+        "指标体系",
+        "A/B测试",
+        "数据建模",
+        "BI",
+        "数仓",
+        "ETL",
+        "数据治理",
+        "用户标签",
+        "数据产品",
+        "神策"
+      ],
+      "responsibilities": [
+        "负责数据中台/数据产品（BI、AB实验、标签体系、自助分析）规划与全生命周期管理",
+        "建设并维护核心指标体系，统一口径与维度模型，推动指标标准化与产品化沉淀",
+        "主导端到端数据解决方案：埋点设计→数据建模→指标定义→上线验收与质量监控"
+      ],
+      "soft_skills": [
+        "强烈的数据敏感度与业务洞察力",
+        "跨团队（数仓/研发/业务）协作与推动力",
+        "目标导向、快速学习与交付"
+      ],
+      "salary_band": "25k-45k/月（一线，5年+）；高级可达 30k-50k·13薪"
+    },
+    {
+      "role": "growth_pm",
+      "label": "增长产品经理",
+      "aliases": [
+        "增长产品",
+        "增长PM",
+        "用户增长"
+      ],
+      "must_have": [
+        "精通 AARRR / 海盗模型，对获客、激活、留存、变现、推荐有体系化理解",
+        "A/B 测试与灰度发布：设计增长实验、验证假设、迭代优化转化漏斗",
+        "SQL 与数据分析：自主洞察，拆解拉新/激活/留存等关键环节指标",
+        "增长功能建设：邀请/裂变系统、新用户引导、任务成就体系、红包卡券等增长杠杆",
+        "转化漏斗优化：从首访到关键行为的路径优化，降低流失、提升转化率",
+        "技术化增长渠道：ASO、小程序/H5 裂变链路、分享回流体验优化",
+        "核心增长指标负责：新增、次留、7日留存、DAU、CAC、LTV、ROI",
+        "MVP 快速设计与落地验证：短链路试错、闭环复盘"
+      ],
+      "nice_to_have": [
+        "社交裂变 / 内容 / 直播 / 电商类产品增长实战",
+        "Push / Feed 类用户唤醒与精细化运营经验",
+        "用户分层、行为预测模型与算法团队协作经验",
+        "AI 产品增长或自动化增长工具建设经验",
+        "多渠道投放（SEM/SEO/应用商店）获客与归因经验"
+      ],
+      "keywords": [
+        "AARRR",
+        "用户增长",
+        "A/B测试",
+        "拉新",
+        "留存",
+        "激活",
+        "转化漏斗",
+        "裂变",
+        "LTV",
+        "CAC",
+        "灰度发布",
+        "增长策略"
+      ],
+      "responsibilities": [
+        "基于 AARRR 制定增长策略与目标，拆解追踪获客/激活/留存/收入/推荐并监控健康度",
+        "建设增长实验机制与关键增长组件（引导、激励、留存、社交传播），对核心增长指标负责",
+        "协同数据/研发/运营/市场，将增长策略转化为产品需求并推动高效落地验证"
+      ],
+      "soft_skills": [
+        "极强的 Ownership 与结果导向、对增长有热情",
+        "敏锐的用户洞察与心理把握",
+        "跨团队强推动与抗压能力"
+      ],
+      "salary_band": "20k-45k/月（一线，3-5年，多含13-15薪）"
+    },
+    {
+      "role": "project_manager",
+      "label": "项目经理",
+      "aliases": [
+        "PM",
+        "项目管理",
+        "项目协调",
+        "项目交付"
+      ],
+      "must_have": [
+        "项目全流程管理：立项、计划制定、执行监控、结项验收，确保按时按质按预算交付",
+        "项目管理方法论：精通敏捷或瀑布，熟悉迭代管理",
+        "项目管理工具：熟练使用 Jira、禅道、Microsoft Project、Trello、Visio",
+        "进度管理：制定项目计划、排期、跟踪里程碑与交付质量",
+        "风险管理：识别延期/技术瓶颈/成本超支风险，制定应急预案",
+        "跨部门资源协调：统筹业务、需求、开发、测试等资源，解决冲突",
+        "成本管理：项目预算制定、成本控制与采购/供应商优化",
+        "项目复盘与文档管理：输出标准化文档、流程优化 SOP"
+      ],
+      "nice_to_have": [
+        "持有 PMP、Prince2、Scrum Master(CSM)、IPMP、CPMP 等认证",
+        "技术开发背景（Python/Java/C#/VB 至少一门，熟悉数据库与 B/S 开发）",
+        "基础数据分析能力（Excel/SQL/Power BI），数据驱动管理决策",
+        "SaaS、物联网、金融科技、电商/ERP/O2O 等行业领域经验",
+        "供应商管理与客户关系管理能力"
+      ],
+      "keywords": [
+        "项目管理",
+        "项目交付",
+        "进度管理",
+        "风险管理",
+        "PMP",
+        "敏捷",
+        "瀑布",
+        "Jira",
+        "禅道",
+        "跨部门协作",
+        "成本控制",
+        "结项验收"
+      ],
+      "responsibilities": [
+        "主导项目全生命周期管理，统筹跨职能/跨地域团队，确保高质量按时交付",
+        "进行变更管理、风险管理、成本管理与交付质量把控，快速解决关键问题",
+        "对接客户需求与预期，组织复盘并沉淀标准化流程，提升团队效能"
+      ],
+      "soft_skills": [
+        "出色的跨部门沟通协调与冲突解决能力",
+        "抗压与多任务并行管理能力",
+        "客户需求转化与商务谈判意识"
+      ],
+      "salary_band": "15k-30k/月（一线，3-5年）；大型交付项目可达 25k-40k"
+    },
+    {
+      "role": "tech_lead",
+      "label": "技术经理 / TL",
+      "aliases": [
+        "技术主管",
+        "Team Leader",
+        "技术负责人",
+        "Tech Lead"
+      ],
+      "must_have": [
+        "团队管理：招聘、目标拆解、绩效管理、人才梯队建设与继任计划",
+        "技术架构规划与关键技术选型，主导架构评审（微服务/云原生/高并发/分布式）",
+        "Code Review 与技术攻坚：建立代码规范、亲自参与核心代码与指导",
+        "工程效能：建立代码规范、自动化测试、CI/CD、发布流程与质量体系",
+        "跨端协同：前端/后端/测试/DevOps/数据协同，进度与风险管控",
+        "系统稳定性与 SLA：性能、容量、成本负责，监控告警与事故复盘",
+        "技术栈深度：精通 Go/Python/Java 等至少一门及生态，熟悉数据库与缓存中间件",
+        "跨部门协作：与产品/算法/运营对齐，将需求转化为可行技术方案"
+      ],
+      "nice_to_have": [
+        "AI 工程化经验（大模型、RAG、向量数据库、机器学习平台落地）",
+        "DevOps / K8s / Docker / 云平台（AWS/Azure/GCP）与 IaC 实践",
+        "DDD、事件驱动架构、系统重构/架构升级/技术转型经验",
+        "从 0 到 1 主导搭建平台/中台（MaaS、AI 能力平台）的成功案例",
+        "ToB/政务/金融/工业互联网复杂系统交付与安全合规经验"
+      ],
+      "keywords": [
+        "团队管理",
+        "技术架构",
+        "Code Review",
+        "微服务",
+        "云原生",
+        "高并发",
+        "分布式",
+        "CI/CD",
+        "技术选型",
+        "工程效能",
+        "稳定性SLA",
+        "技术规划"
+      ],
+      "responsibilities": [
+        "结合业务目标制定技术路线图与交付里程碑，主导架构设计与技术决策",
+        "负责研发团队管理与工程效能，建立代码规范、质量体系与 CI/CD 流程",
+        "作为技术侧负责人跨部门协同，保障复杂项目技术落地与风险控制"
+      ],
+      "soft_skills": [
+        "强烈的业务与产品意识，能权衡技术理想与商业现实",
+        "系统性思维与前瞻性，能设计可演进的架构",
+        "向非技术角色清晰阐述方案、敏锐的技术风险嗅觉"
+      ],
+      "salary_band": "30k-50k/月（一线，8年+研发含2年+管理）；资深可达 45k-70k"
+    },
+    {
+      "role": "scrum",
+      "label": "敏捷教练 / Scrum Master",
+      "aliases": [
+        "Scrum",
+        "敏捷",
+        "敏捷教练",
+        "SM"
+      ],
+      "must_have": [
+        "精通 Scrum 框架与敏捷原则，理解精益与 DevOps 理念",
+        "主持 Scrum 仪式：Daily Standup、Sprint Planning、Refinement/Grooming、Review、Retrospective",
+        "敏捷工具：熟练使用 Jira、Confluence 进行任务拆分、进度跟踪、文档沉淀、版本管理",
+        "移除障碍（Impediment）：识别并清除跨团队/流程/资源阻碍，保护团队专注交付",
+        "跨团队依赖协调：与其他 Scrum Master 梳理依赖，促进多团队协同",
+        "需求生命周期管控与迭代节奏管理，保障高质量递增交付",
+        "团队赋能与敏捷成熟度提升：培训、引导、沉淀研发规范",
+        "利益相关者沟通：同步进度、风险与交付情况，对接产品负责人"
+      ],
+      "nice_to_have": [
+        "持有 CSM、PSM、ACP、SAFe 等敏捷认证",
+        "熟悉 Kanban、XP 等其他敏捷方法论及 SAFe 大规模敏捷",
+        "金融 / 金融科技领域敏捷落地经验",
+        "软件研发背景或开发技能，理解研发全流程",
+        "流利英文（书面+口语），可对接外籍同事/海外团队"
+      ],
+      "keywords": [
+        "Scrum",
+        "敏捷",
+        "Scrum Master",
+        "站会",
+        "迭代规划",
+        "回顾会",
+        "看板Kanban",
+        "Jira",
+        "Confluence",
+        "障碍移除",
+        "敏捷教练",
+        "跨职能团队"
+      ],
+      "responsibilities": [
+        "组织并促进 Scrum 各项仪式，保障迭代高效有序交付",
+        "作为团队教练与屏障，识别并清除研发过程中的障碍，维护团队专注",
+        "通过回顾与培训推动团队持续改进，提升敏捷成熟度与协作效率"
+      ],
+      "soft_skills": [
+        "引导（Facilitation）与教练（Coaching）能力",
+        "出色的沟通影响与冲突解决能力",
+        "高度自我驱动、适应快节奏多变环境"
+      ],
+      "salary_band": "18k-35k/月（一线，3年+专职）；资深/SAFe 顾问可达 30k-45k"
+    },
+    {
+      "role": "newmedia",
+      "label": "新媒体运营",
+      "aliases": [
+        "短视频",
+        "公众号",
+        "小红书",
+        "抖音运营"
+      ],
+      "must_have": [
+        "多平台账号运营（公众号、小红书、抖音、视频号、快手、B站至少3个）",
+        "内容策划与文案撰写（种草/干货/热点/短视频脚本，网感强）",
+        "短视频拍摄与剪辑（剪映，能独立完成选材、字幕、配乐、特效）",
+        "图文排版（秀米、135编辑器、创客贴等）",
+        "数据监控与复盘（播放量、阅读量、涨粉、点赞、转化，输出复盘报告）",
+        "热点捕捉与竞品分析（借势营销、取长补短优化方案）",
+        "粉丝互动与社群维护（评论/私信回复、互动率与粘性提升）",
+        "基础设计能力（PS、Canva、美图秀秀制作海报与封面）"
+      ],
+      "nice_to_have": [
+        "个人爆款账号或过往成功运营案例",
+        "AI工具辅助（DeepSeek、豆包、ChatGPT等）",
+        "数据工具使用（蝉妈妈、千瓜、新榜、巨量引擎、小红书聚光、抖音热点宝）",
+        "出镜拍摄与直播经验",
+        "医疗/化妆品/集团等特定行业内容经验"
+      ],
+      "keywords": [
+        "新媒体运营",
+        "小红书",
+        "抖音",
+        "公众号",
+        "视频号",
+        "短视频脚本",
+        "种草文案",
+        "网感",
+        "数据复盘",
+        "粉丝互动",
+        "爆款",
+        "热点借势"
+      ],
+      "responsibilities": [
+        "全平台内容策划、创作与发布，贴合平台调性输出原创内容",
+        "账号日常运维与粉丝互动维护，提升互动率与账号活跃度",
+        "流量与数据复盘，分析爆款逻辑并优化内容方向与运营策略",
+        "结合热点与营销节点策划线上活动，借势提升曝光与转化"
+      ],
+      "soft_skills": [
+        "网感与热点敏感度",
+        "执行力与抗压能力",
+        "创新思维"
+      ],
+      "salary_band": "6k-15k/月（一线，含作品集优先；资深可达20k+）"
+    },
+    {
+      "role": "marketing",
+      "label": "市场营销",
+      "aliases": [
+        "市场",
+        "marketing",
+        "市场策划"
+      ],
+      "must_have": [
+        "整合营销策略制定与执行（与公司战略目标一致）",
+        "市场趋势与竞品动态分析，挖掘市场机会",
+        "营销预算管理与成本效益最大化（ROI评估）",
+        "全渠道传播统筹（社交媒体、内容营销、线下活动等）",
+        "项目管理（独立策划并执行大型营销活动/新品上市）",
+        "跨部门协调（产品、销售、公关等团队协同）",
+        "Social Listening/舆情监测与消费者调研（定量+定性）",
+        "营销效果数据分析与策略持续优化"
+      ],
+      "nice_to_have": [
+        "丰富异业/跨界资源，可快速融合应用",
+        "英语可作为工作语言或海外/国际品牌经验",
+        "熟悉4P/4C营销策略框架与GTM打法",
+        "媒介投放经验（巨量引擎、小红书聚光等）",
+        "品牌年轻化与差异化操盘经验"
+      ],
+      "keywords": [
+        "整合营销",
+        "市场策划",
+        "4P",
+        "品牌推广",
+        "ROI",
+        "GTM",
+        "新品上市",
+        "消费者调研",
+        "竞品分析",
+        "项目管理",
+        "全渠道",
+        "Social Listening"
+      ],
+      "responsibilities": [
+        "制定并执行整合营销策略，提升品牌知名度与市场影响力",
+        "管理与优化营销预算，通过数据分析评估活动效果并持续迭代",
+        "统筹大型营销事件（新品上市、节日营销、跨界联名）全链路闭环",
+        "协调内外部资源（媒体、KOL、代理商）确保项目高效落地"
+      ],
+      "soft_skills": [
+        "创新思维",
+        "团队合作精神",
+        "良好抗压能力"
+      ],
+      "salary_band": "15k-35k/月（一线，含年终；资深/大厂更高）"
+    },
+    {
+      "role": "brand",
+      "label": "品牌经理",
+      "aliases": [
+        "品牌",
+        "品牌策划",
+        "公关"
+      ],
+      "must_have": [
+        "品牌定位与品牌策略规划（基于发展战略输出品牌体系）",
+        "品牌体系搭建（品牌手册、VI、品牌KV、TVC、宣传视频）",
+        "整合营销传播策划与执行（线上+线下活动、市场宣传）",
+        "公关与危机处理（舆情监测、危机事件公关、媒体关系维护）",
+        "自媒体矩阵管理（双微一抖一红、B站、知乎、官网等官方号）",
+        "消费者洞察与品牌健康度评估（认知度、NPS、溢价能力）",
+        "视觉规范管理与内容合规把控（品牌故事、新闻稿、物料）",
+        "媒介资源与KOL/外部合作方对接（广告公司、IP方）"
+      ],
+      "nice_to_have": [
+        "知名品牌方或广告/公关公司从业经验",
+        "团队管理经验（3年以上管理优先）",
+        "IP/跨界/异业合作资源（明星、品牌、IP方）",
+        "短视频/宣传片全流程制作（创意、分镜、拍摄、剪辑）",
+        "海外品牌经验或英语工作能力"
+      ],
+      "keywords": [
+        "品牌定位",
+        "品牌策略",
+        "VI",
+        "品牌手册",
+        "整合营销",
+        "公关",
+        "危机公关",
+        "舆情",
+        "NPS",
+        "品牌声量",
+        "KOL",
+        "跨界联名"
+      ],
+      "responsibilities": [
+        "制定品牌年度/季度传播策略并监控执行与优化",
+        "品牌形象与视觉体系管理（VI、KV、TVC），确保各端口统一",
+        "公关危机处理与媒体关系维护，降低风险维护品牌形象",
+        "品牌健康度监测（认知度、美誉度、NPS）并据此优化策略"
+      ],
+      "soft_skills": [
+        "商业思维与顾客洞察力",
+        "资源整合与项目管理能力",
+        "沟通协调与抗压能力"
+      ],
+      "salary_band": "20k-45k/月（一线，含年终；资深/大厂可达50k+）"
+    },
+    {
+      "role": "bd",
+      "label": "商务 / BD 经理",
+      "aliases": [
+        "商务拓展",
+        "BD",
+        "商务合作"
+      ],
+      "must_have": [
+        "市场开拓与客户开发（政府、企业、平台、行业协会等）",
+        "商务谈判与合同签署（全流程落地，控制风险）",
+        "合作方案设计与落地（整合内外部资源推动实施）",
+        "客户关系维护（建立长期稳定战略合作关系）",
+        "资源整合与生态建设（异业合作、渠道、价值链互换）",
+        "市场情报与政策研究（行业动态、竞品、生态策略）",
+        "内外部协同（技术、产品、运营团队配合）",
+        "数据分析与拓展报告（跟踪合作执行、优化方案）"
+      ],
+      "nice_to_have": [
+        "行业客户资源（KOL、MCN、品牌方、经销商、大厂人脉）",
+        "投标与标书管理（报价测算、技术方案整合）",
+        "经销商/代理商体系搭建与管理",
+        "政府/行业协会/互联网大厂（阿里云、腾讯云等）合作经验",
+        "英语能力（口语交流、公文撰写）"
+      ],
+      "keywords": [
+        "商务拓展",
+        "BD",
+        "商务谈判",
+        "客户开发",
+        "合作签约",
+        "资源整合",
+        "生态合作",
+        "渠道拓展",
+        "异业合作",
+        "经销商管理",
+        "解决方案销售",
+        "招投标"
+      ],
+      "responsibilities": [
+        "主动开拓新市场、新客户与合作伙伴，构建生态关系网络",
+        "主导商务谈判、合作方案设计与合同签署全流程落地",
+        "整合内外部资源，推动合作项目从线索到交付闭环",
+        "维护关键客户与生态伙伴关系，持续挖掘合作机会"
+      ],
+      "soft_skills": [
+        "谈判与沟通表达能力",
+        "目标导向与自驱力",
+        "抗压与复杂环境推进能力"
+      ],
+      "salary_band": "8k-25k/月（一线，含提成/佣金；大厂/资源型更高）"
+    },
+    {
+      "role": "sales",
+      "label": "销售经理",
+      "aliases": [
+        "销售",
+        "大客户销售",
+        "KA"
+      ],
+      "must_have": [
+        "大客户（KA）开发与维护（全生命周期管理）",
+        "销售目标与回款指标达成（年度/季度/月度拆解）",
+        "商务谈判与合同签署（项目需求对接到签约全流程）",
+        "解决方案式销售（针对客户痛点定制商务/动销方案）",
+        "客情关系维护（对接采购、运营、高管等决策层）",
+        "市场与竞品分析（政策、行业动态、客户需求洞察）",
+        "销售数据/回款/费用统计管理与工作汇报（日报/周报/月报）",
+        "内部协同（售前、运营、产品、客服团队配合交付）"
+      ],
+      "nice_to_have": [
+        "行业客户资源（互联网、医药、物流、快消等）",
+        "效果广告/程序化购买/信息流/搜索广告知识",
+        "C-Level高层对话与顾问式销售能力",
+        "渠道资源与经销商网络",
+        "驾驶证与适应出差"
+      ],
+      "keywords": [
+        "大客户销售",
+        "KA",
+        "销售目标",
+        "回款",
+        "商务谈判",
+        "解决方案销售",
+        "客户开拓",
+        "客情维护",
+        "续约增购",
+        "顾问式销售",
+        "业绩指标",
+        "渠道"
+      ],
+      "responsibilities": [
+        "负责区域/行业大客户销售指标与回款达成，制定销售计划",
+        "开拓新客户并维护战略合作关系，提升份额与渗透率",
+        "定制解决方案并主导商务谈判，推动合同落地交付",
+        "市场洞察与销售策略优化，反馈客户声音支持产品迭代"
+      ],
+      "soft_skills": [
+        "目标感与抗压能力",
+        "顾问式销售与沟通表达",
+        "自驱力与执行力"
+      ],
+      "salary_band": "10k-30k/月（一线，不含提成；含提成上不封顶，资深KA更高）"
+    },
+    {
+      "role": "growth",
+      "label": "用户增长",
+      "aliases": [
+        "增长",
+        "增长黑客",
+        "增长运营"
+      ],
+      "must_have": [
+        "增长方法论（AARRR模型/增长飞轮）体系化应用",
+        "漏斗/路径/归因分析，定位增长瓶颈与机会点",
+        "A/B测试设计与落地（注册转化、留存、裂变等）",
+        "裂变/社交传播/病毒机制与人传人体系设计",
+        "SQL数据提取与分析（独立做归因与投入产出分析）",
+        "增长看板搭建（DAU/MAU、CAC/LTV等核心指标监控）",
+        "渠道投放与ROI优化（自然+付费流量配比动态调整）",
+        "用户分层、激活、留存、召回策略设计"
+      ],
+      "nice_to_have": [
+        "Python/脚本语言能力（规模化数据处理）",
+        "AI工具辅助增长（ChatGPT/Claude辅助分析与实验设计）",
+        "私域/企微/社群运营经验",
+        "海外/跨境用户增长或应用商店（ASO）经验",
+        "从0到1搭建增长体系或带增长团队经验"
+      ],
+      "keywords": [
+        "用户增长",
+        "AARRR",
+        "增长黑客",
+        "漏斗分析",
+        "A/B Test",
+        "SQL",
+        "裂变",
+        "CAC",
+        "LTV",
+        "留存",
+        "拉新",
+        "归因分析",
+        "私域"
+      ],
+      "responsibilities": [
+        "制定并执行用户增长策略（AARRR全链路，拉新-激活-留存-变现-推荐）",
+        "设计并落地增长实验（裂变活动、激励体系、召回策略）",
+        "深度分析用户行为数据，识别增长杠杆并快速迭代",
+        "协同产品/技术/内容推进增长项目，确保快速上线与效果跟踪"
+      ],
+      "soft_skills": [
+        "结果导向与自驱力",
+        "数据驱动思维",
+        "抗压与快速迭代能力"
+      ],
+      "salary_band": "15k-40k/月（一线，含年终；资深/大厂增长更高）"
+    },
+    {
+      "role": "security",
+      "label": "安全工程师",
+      "aliases": [
+        "安全",
+        "信息安全",
+        "渗透",
+        "安全合规"
+      ],
+      "must_have": [
+        "渗透测试：熟练使用 Burp Suite / Nmap / Metasploit，独立完成内外网渗透",
+        "代码审计：Java Web 审计、OWASP Top 10 漏洞原理与缓解措施",
+        "漏洞挖掘与 SRC / CTF 实战经验，能编写 POC / 利用脚本",
+        "逆向分析：脱壳、反编译、抓包、行为分析",
+        "安全合规：等保 2.0 / ISO27001 / GDPR 解读与差距分析",
+        "至少掌握一门语言（Python / Go / Java），能独立开发安全工具模块",
+        "SDL 安全开发生命周期、安全评估加固与应急响应",
+        "基础扎实：数据结构、操作系统、数据库、网络、算法"
+      ],
+      "nice_to_have": [
+        "SRC 排名靠前白帽子、CTF 战队经历",
+        "参与或维护 GitHub 安全开源项目",
+        "HW 行动 / 红蓝对抗 / 国家级攻防演练经验",
+        "密码学、二进制安全、恶意代码分析",
+        "AI 安全、隐私计算与数据安全治理"
+      ],
+      "keywords": [
+        "渗透测试",
+        "代码审计",
+        "逆向",
+        "安全合规",
+        "漏洞挖掘",
+        "等保",
+        "应急响应",
+        "SDL",
+        "Burp Suite",
+        "CTF",
+        "SRC",
+        "OWASP",
+        "红队",
+        "数据安全",
+        "代码安全"
+      ],
+      "responsibilities": [
+        "负责产品 / 系统的安全测试、渗透与漏洞修复推进考核",
+        "开展安全风险评估、合规差距分析与审计支持，制定安全基线",
+        "制定优化安全规章制度与流程，负责安全意识培训与监管对接"
+      ],
+      "soft_skills": [
+        "对新技术强烈的求知欲与自驱力",
+        "良好的沟通协调能力（对接客户 / 监管机构）",
+        "职业操守强、责任心重"
+      ],
+      "salary_band": "15k-40k/月（一线，红队 / 资深 40k-80k，CISO 级更高）"
+    },
+    {
+      "role": "blockchain",
+      "label": "区块链开发工程师",
+      "aliases": [
+        "区块链",
+        "web3",
+        "智能合约"
+      ],
+      "must_have": [
+        "Solidity / Vyper 智能合约独立开发、部署、审计与优化",
+        "Go / Java / C++ 至少精通一门（Rust 加分），工程实现能力强",
+        "Web3.js / Ethers.js 及 Hardhat / Foundry / Truffle 开发工具链",
+        "熟悉以太坊 EVM / Polygon / BSC / Hyperledger Fabric 等至少一个生态",
+        "理解共识机制：PoW / PoS / DPoS / PBFT / Raft",
+        "密码学原理：哈希、签名、零知识证明、同态加密",
+        "Linux / Docker / K8s 部署与云平台运维",
+        "存储：MySQL / PostgreSQL / Redis / MongoDB，分布式系统基础"
+      ],
+      "nice_to_have": [
+        "合约安全审计（Slither / Mythril）与第三方安全审计配合经验",
+        "DeFi / NFT / 跨链 / Layer2 实际项目经验",
+        "Rust / Move 系统级编程（Solana / Aptos / Sui）",
+        "开源贡献、审计竞赛（Code4rena / Sherlock）排名",
+        "隐私计算、PQC 抗量子密码学背景"
+      ],
+      "keywords": [
+        "Solidity",
+        "智能合约",
+        "Web3",
+        "以太坊",
+        "Hardhat",
+        "Foundry",
+        "共识算法",
+        "密码学",
+        "跨链",
+        "Layer2",
+        "Go",
+        "Rust",
+        "Ethers.js",
+        "DeFi",
+        "Gas优化"
+      ],
+      "responsibilities": [
+        "智能合约的设计 / 开发 / 部署 / 审计与性能（Gas）优化",
+        "区块链底层（公链 / 联盟链）核心模块开发：共识、P2P、加密、账本存储",
+        "链上 / 链下系统架构设计，优化吞吐量、跨链交互与节点同步"
+      ],
+      "soft_skills": [
+        "工程严谨性与安全优先意识",
+        "英文读写能力（跟踪 EIP 提案与技术标准的国际前沿）",
+        "跨职能团队协作（产品 / 前端 / 测试 / 运维）"
+      ],
+      "salary_band": "18k-35k/月（一线，资深 / 架构师 30k+）"
+    },
+    {
+      "role": "quant",
+      "label": "量化开发工程师",
+      "aliases": [
+        "量化",
+        "quant",
+        "量化交易"
+      ],
+      "must_have": [
+        "Python / C++17-20（模板、并发、SIMD），代码规范且工程实现强",
+        "Linux 系统、网络编程与多线程编程，低延迟高并发系统处理能力",
+        "量化策略回测框架搭建与因子开发、机器学习模型部署",
+        "行情 / 交易数据管线治理，数据可用性与一致性保障",
+        "扎实的数据结构、算法与操作系统原理，能定位优化性能瓶颈",
+        "股票 / 期货实盘或模拟交易系统开发经验",
+        "数学 / 统计 / 物理基础，金融工程与风控逻辑理解",
+        "Git 版本管理与良好的文档撰写能力"
+      ],
+      "nice_to_have": [
+        "Rust / Go 开发经验",
+        "FPGA / 极低延迟技术栈、高频撮合与行情链路优化",
+        "CUDA / GPU 与深度学习在量化中的实际应用",
+        "分布式计算 / 存储 / 数据库系统研发经验",
+        "ACM-ICPC / NOI / 数模竞赛奖项，顶级会议论文"
+      ],
+      "keywords": [
+        "Python",
+        "C++",
+        "策略回测",
+        "低延迟",
+        "因子挖掘",
+        "量化交易",
+        "Linux",
+        "机器学习",
+        "Rust",
+        "高频交易",
+        "分布式",
+        "风控",
+        "FPGA",
+        "CUDA"
+      ],
+      "responsibilities": [
+        "将研究员提供的量化模型 / 策略原型转化为可回测、可部署的生产级代码",
+        "构建回测平台与稳定高吞吐的行情 / 交易数据处理管线",
+        "优化执行引擎性能、降低延迟并提高撮合效率，落地交易风控逻辑"
+      ],
+      "soft_skills": [
+        "自我驱动与快速学习新知识的能力",
+        "强逻辑思维与系统性问题拆解能力",
+        "能适应高压、高频、快速迭代的工作节奏"
+      ],
+      "salary_band": "25k-60k/月（一线，资深 / Leader 50k-80k+，头部机构百万年薪+）"
+    },
+    {
+      "role": "prompt",
+      "label": "提示词工程师 / AI 应用工程师",
+      "aliases": [
+        "提示词",
+        "Prompt",
+        "AI应用",
+        "Agent"
+      ],
+      "must_have": [
+        "Prompt Engineering：掌握 Few-shot / Chain-of-Thought / ReAct 等提示范式",
+        "熟悉主流大模型（GPT / Claude / Gemini / DeepSeek / 文心一言 / 通义千问）特性与选型",
+        "RAG 技术实现流程，熟悉 LangChain / LlamaIndex 框架",
+        "Python 编程与良好的工程实现能力",
+        "向量数据库实战：FAISS / Qdrant / Milvus / Pinecone",
+        "Agent 架构与框架：LangGraph / AutoGen / CrewAI",
+        "Function Calling / Tool Use / Memory 机制理解与应用",
+        "了解模型微调方法：PEFT / LoRA / QLoRA / Prompt Tuning"
+      ],
+      "nice_to_have": [
+        "多 Agent 协作与工作流编排经验",
+        "模型部署：Docker / Kubernetes / vLLM / 本地模型推理优化",
+        "业务理解与产品思维，能拆解复杂业务为多步 Agent 流程",
+        "多模型对比选型与复杂业务流程 Prompt 编排",
+        "AI 产品落地或企业知识库项目经验"
+      ],
+      "keywords": [
+        "Prompt Engineering",
+        "LLM",
+        "RAG",
+        "LangChain",
+        "Agent",
+        "向量数据库",
+        "Function Calling",
+        "LoRA",
+        "大模型",
+        "微调",
+        "多轮对话",
+        "知识库",
+        "LangGraph",
+        "Tool Use"
+      ],
+      "responsibilities": [
+        "设计与优化提示词及 Agent 工作流，提升模型在具体场景的表现与稳定性",
+        "搭建 RAG 与企业知识库，构建智能体对外部工具的智能调度",
+        "参与模型微调 / 推理优化，建立 Agent 评估体系提升准确率"
+      ],
+      "soft_skills": [
+        "逻辑清晰、对语言与表达敏感",
+        "业务 / 产品理解能力，处于技术与产品交叉口",
+        "跨团队（后端 / 产品）协作能力"
+      ],
+      "salary_band": "15k-40k/月（一线，资深 35k-60k，AI 创业公司可含期权）"
+    },
+    {
+      "role": "embedded",
+      "label": "嵌入式开发工程师",
+      "aliases": [
+        "嵌入式",
+        "单片机",
+        "RTOS",
+        "驱动"
+      ],
+      "must_have": [
+        "C 语言精通（指针 / 位操作 / volatile / 内存模型），C++ / Python / Shell 辅助",
+        "MCU 开发：STM32 / ESP32 / NXP / GD32 / RISC-V 等 Cortex-M 架构",
+        "RTOS：FreeRTOS / RT-Thread / Zephyr / µC/OS 任务调度与 IPC",
+        "外设驱动：GPIO / UART / I2C / SPI / CAN / ADC / PWM / DMA / 定时器",
+        "嵌入式 Linux 驱动开发、U-Boot 移植、设备树、Yocto / Buildroot 根文件系统",
+        "通信协议：板级 UART/I2C/SPI，现场总线 CAN/Modbus，网络 TCP/IP / MQTT / HTTP",
+        "调试工具：J-Link / ST-Link / GDB / 示波器 / 逻辑分析仪",
+        "代码规范、软硬件联调与版本管理（Git）"
+      ],
+      "nice_to_have": [
+        "车规 Autosar / ISO 26262 功能安全标准",
+        "边缘 AI 部署：TFLite-Micro / TinyML",
+        "RISC-V 生态、LVGL 图形界面",
+        "OTA / Bootloader 开发、与云平台 MQTT 通信",
+        "PCB / 硬件基础（AD / Cadence），新能源 / 电力电子协议（OCPP / IEC61850）"
+      ],
+      "keywords": [
+        "嵌入式",
+        "C/C++",
+        "单片机",
+        "RTOS",
+        "驱动开发",
+        "Linux",
+        "STM32",
+        "物联网",
+        "通信协议",
+        "调试",
+        "固件",
+        "嵌入式Linux",
+        "FreeRTOS",
+        "CAN",
+        "MQTT"
+      ],
+      "responsibilities": [
+        "MCU 固件 / RTOS 与嵌入式 Linux 驱动的设计、开发与维护",
+        "软硬件联调，定位时序违例、中断抖动等深层 Bug",
+        "低功耗 / 性能（启动时间、内存）优化，编写规范代码与技术文档"
+      ],
+      "soft_skills": [
+        "独立分析、定位与解决问题的能力",
+        "动手能力强，能与硬件工程师高效协作",
+        "良好的代码规范与文档习惯"
+      ],
+      "salary_band": "10k-30k/月（一线，资深 / 新能源方向 15k-30k+）"
+    }
+  ]
+}

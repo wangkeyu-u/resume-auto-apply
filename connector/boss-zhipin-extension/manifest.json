@@ -1,0 +1,34 @@
+{
+  "manifest_version": 3,
+  "name": "简历助手 · 自动投递桥接",
+  "version": "2.0.0",
+  "description": "把招聘网站（BOSS直聘/猎聘/LinkedIn/企业官网等）的职位与 HR 消息接到本地「简历自动投递助手」：一键抓取职位、自动填申请表、自动拟并填入聊天回复。所有发送由你本人确认，绝不做无人值守冒充。",
+  "permissions": ["activeTab", "scripting", "storage", "tabs"],
+  "host_permissions": [
+    "https://www.zhipin.com/*",
+    "https://www.liepin.com/*",
+    "https://www.lagou.com/*",
+    "https://www.linkedin.com/*",
+    "https://www.zhaopin.com/*",
+    "https://www.51job.com/*",
+    "<all_urls>",
+    "http://127.0.0.1:8011/*"
+  ],
+  "background": { "service_worker": "background.js" },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.zhipin.com/*",
+        "https://www.kanzhun.com/*",
+        "https://www.liepin.com/*",
+        "https://www.lagou.com/*",
+        "https://www.linkedin.com/*",
+        "https://www.zhaopin.com/*",
+        "https://www.51job.com/*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": { "default_popup": "popup.html", "default_title": "简历助手桥接" }
+}

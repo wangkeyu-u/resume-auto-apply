@@ -1,0 +1,28 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.venv/
+venv/
+env/
+
+# ---- Local database (contains personal/test data — never commit) ----
+*.db
+*.db-shm
+*.db-wal
+*.db-journal
+
+# ---- Secrets / local environment ----
+.env
+.env.*
+*.local
+
+# ---- OS ----
+.DS_Store
+Thumbs.db
+
+# ---- Editor / IDE ----
+.idea/
+.vscode/
+*.swp

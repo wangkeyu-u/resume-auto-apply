@@ -1,0 +1,55 @@
+{
+  "sources": [
+    {
+      "id": "demo",
+      "type": "demo",
+      "enabled": true,
+      "label": "内置示例职位（用于演示/测试）",
+      "limit": 20
+    },
+    {
+      "id": "rss_example",
+      "type": "rss",
+      "enabled": false,
+      "label": "自定义 RSS 职位源",
+      "url": "https://example.com/jobs.rss",
+      "limit": 30
+    }
+  ],
+  "smtp": {
+    "enabled": false,
+    "host": "",
+    "port": 465,
+    "username": "",
+    "password": "",
+    "use_tls": true,
+    "from_name": "",
+    "from_address": ""
+  },
+  "llm": {
+    "enabled": false,
+    "provider": "openai",
+    "api_key": "",
+    "base_url": "https://api.openai.com/v1",
+    "model": "gpt-4o-mini"
+  },
+  "schedule": {
+    "auto_refresh_enabled": true,
+    "refresh_interval_minutes": 360,
+    "min_match_score": 60,
+    "auto_draft": true
+  },
+  "safety": {
+    "require_human_approval": true,
+    "max_send_per_hour": 10,
+    "respect_robots_txt": true
+  },
+  "autopilot": {
+    "enabled": false,
+    "auto_approve": true,
+    "auto_send": false,
+    "auto_chat_reply": true,
+    "min_score": 75,
+    "max_send_per_day": 30
+  }
+}

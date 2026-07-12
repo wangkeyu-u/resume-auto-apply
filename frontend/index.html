@@ -1,0 +1,352 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>简历自动投递助手</title>
+<link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+<header class="top">
+  <div>
+    <h1>📨 简历自动投递助手</h1>
+    <div class="sub">聚合职位 · 智能匹配 · 自动生成求职信 · 人工确认后批量投递</div>
+  </div>
+</header>
+
+<nav class="tabs">
+  <div class="tab active" data-tab="optimize">✨ 简历优化</div>
+  <div class="tab" data-tab="dashboard">📊 数据看板</div>
+  <div class="tab" data-tab="overview">概览</div>
+  <div class="tab" data-tab="profile">个人资料</div>
+  <div class="tab" data-tab="jobs">职位库</div>
+  <div class="tab" data-tab="queue">待投递</div>
+  <div class="tab" data-tab="sent">已发送</div>
+  <div class="tab" data-tab="chat">沟通</div>
+  <div class="tab" data-tab="settings">设置</div>
+</nav>
+
+<main>
+  <!-- OPTIMIZE (简历优化 · 首页) -->
+  <section class="view active" id="view-optimize">
+    <div class="card guide">
+      <div class="row">
+        <h2 style="margin:0">👋 新手指南：3 步优化你的简历</h2>
+        <span class="spacer"></span>
+        <button class="ghost" id="btnToggleGuide" type="button">收起</button>
+      </div>
+      <div id="guideBody">
+        <div class="steps">
+          <div class="step"><div class="sn">1</div><div><b>贴简历</b><div class="note">把你的简历全文粘到左边框里（Word/PDF 里全选复制即可）。</div></div></div>
+          <div class="step"><div class="sn">2</div><div><b>填目标</b><div class="note">写上你想投的公司和岗位；有招聘 JD 就一起贴上，分析更准。</div></div></div>
+          <div class="step"><div class="sn">3</div><div><b>一键优化</b><div class="note">点「分析岗位并优化简历」。系统会先分析该岗位真实要求，再帮你改简历、告诉你改了啥、还缺啥。</div></div></div>
+        </div>
+        <div class="note" style="margin-top:6px">💡 岗位要求来自我们抓取的真实招聘数据知识库；如在「设置」里开启 AI 模型，改写会更自然、更贴合。这一页不涉及自动投递，放心用。</div>
+      </div>
+    </div>
+
+    <div class="grid cols-2 opt-grid">
+      <div class="card">
+        <h2>① 你的简历</h2>
+        <textarea id="o_resume" style="min-height:280px" placeholder="在此粘贴你的简历全文…&#10;例如：&#10;张三，5年后端开发经验&#10;技能：Java, Spring Boot, MySQL, Redis&#10;工作经历：A公司 后端工程师 2020-2024 …"></textarea>
+        <div class="note" id="o_resume_hint" style="margin-top:6px"></div>
+      </div>
+      <div class="card">
+        <h2>② 目标岗位</h2>
+        <label>目标公司</label><input id="o_company" placeholder="如：字节跳动">
+        <label>目标岗位 <span class="req">*必填</span></label><input id="o_title" placeholder="如：后端开发工程师">
+        <label>岗位 JD（可选，贴上分析更准）</label>
+        <textarea id="o_jd" style="min-height:120px" placeholder="把招聘页面的「岗位职责 / 任职要求」复制到这里（没有也可以）"></textarea>
+        <div class="row" style="margin-top:12px">
+          <button id="btnAnalyze" type="button">🔍 只看岗位要求</button>
+          <button id="btnOptimize" type="button" class="primary">✨ 分析岗位并优化简历</button>
+        </div>
+        <div class="note" id="o_msg" style="margin-top:8px"></div>
+      </div>
+    </div>
+
+    <div class="card" id="o_result" style="display:none">
+      <div class="row">
+        <h2 style="margin:0">📊 分析与优化结果</h2>
+        <span class="spacer"></span>
+        <span class="note" id="o_source"></span>
+      </div>
+      <div id="o_reqs"></div>
+      <div id="o_match"></div>
+      <div class="opt-cols">
+        <div>
+          <h3>✅ 改动说明</h3>
+          <div id="o_changes" class="note"></div>
+          <h3>💡 补强建议</h3>
+          <div id="o_suggestions" class="note"></div>
+        </div>
+        <div>
+          <div class="row"><h3 style="margin:0">📄 优化后简历</h3><span class="spacer"></span>
+            <button class="ghost" id="btnOpenResume" type="button">新窗口预览</button>
+            <button class="ghost" id="btnCopyResume" type="button">复制文本</button>
+            <button id="btnUseResume" type="button">用作我的简历</button>
+          </div>
+          <pre id="o_optimized" class="opt-pre"></pre>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="banner">
+    ⚠️ 安全与合规：开启「全自动模式」后，匹配 / 定制 / 批准 / 发邮件 / HR 回复采纳 全部自动跑，你无需再点。唯一仍需你亲自操作的是第三方站点（如 BOSS）里的「发送」那一下——这是平台条款与封号红线，系统不替你代点。邮件发送有每日上限与每小时限速，避免被当垃圾邮件。
+  </div>
+
+  <!-- DASHBOARD -->
+  <section class="view" id="view-dashboard">
+    <div class="card">
+      <div class="row"><h2 style="margin:0">📊 投递数据看板</h2><span class="spacer"></span>
+        <span class="note" id="dashUpdated"></span></div>
+    </div>
+
+    <div class="grid cols-4" id="rateCards"></div>
+
+    <div class="card">
+      <h2>投递漏斗</h2>
+      <div id="funnel"></div>
+    </div>
+
+    <div class="card">
+      <div class="row"><h2 style="margin:0">看板（按状态）</h2><span class="spacer"></span>
+        <span class="note">点卡片上的「→」把该职位推进到下一状态</span></div>
+      <div class="kanban" id="kanban"></div>
+    </div>
+
+    <div class="card">
+      <div class="row"><h2 style="margin:0">🚫 黑名单（自动沉淀 + 手动）</h2><span class="spacer"></span>
+        <span class="note">命中公司会在匹配时自动跳过</span></div>
+      <div class="row" style="margin:8px 0">
+        <select id="bl_kind"><option value="company">公司</option><option value="keyword">关键词</option><option value="title">岗位</option></select>
+        <input id="bl_value" placeholder="要拉黑的公司名 / 关键词">
+        <input id="bl_reason" placeholder="原因（可选）">
+        <button id="bl_add" type="button">加入黑名单</button>
+      </div>
+      <div id="blacklist"></div>
+    </div>
+  </section>
+
+  <!-- OVERVIEW -->
+  <section class="view" id="view-overview">
+    <div class="card" id="autopilotCard" style="border-color:#7c3aed;background:linear-gradient(135deg,#faf5ff,#fff)">
+      <div class="row">
+        <h2 style="margin:0">🤖 全自动模式（你只需一开始给资料，之后全自动）</h2>
+        <span class="spacer"></span>
+        <label class="switch-row"><input type="checkbox" id="ap_enabled" style="width:auto;margin-right:6px">开启</label>
+      </div>
+      <div class="note" style="margin:8px 0">开启后系统自己跑：拉职位 → 匹配评分 → 按岗位定制简历 → 自动批准(≥<input id="ap_min" type="number" style="width:56px;display:inline;padding:2px 4px">分) → 自动发邮件 → HR 消息自动拟回复并采纳。你什么都不用点。</div>
+      <div class="row">
+        <label class="switch-row"><input type="checkbox" id="ap_auto_send" style="width:auto;margin-right:6px">无人值守发邮件</label>
+        <label class="switch-row"><input type="checkbox" id="ap_auto_chat" style="width:auto;margin-right:6px">自动采纳 HR 回复</label>
+        <span class="note">每日上限 <input id="ap_cap" type="number" style="width:56px;display:inline;padding:2px 4px"> 封</span>
+        <span class="spacer"></span>
+        <button id="btnApRun" class="ghost" type="button">立即运行一次</button>
+      </div>
+      <div id="apStatus" class="note" style="margin-top:8px"></div>
+    </div>
+    <div class="grid cols-4" id="statGrid"></div>
+    <div class="card">
+      <h2>资料完整度</h2>
+      <div id="completeness"></div>
+      <div id="llmStatus" style="margin-top:10px"></div>
+    </div>
+    <div class="card">
+      <h2>快速操作</h2>
+      <div class="row">
+        <button id="btnRefresh">① 拉取职位</button>
+        <button id="btnMatch">② 匹配评分</button>
+        <a class="button ghost" href="/api/profile/resume" target="_blank" style="text-decoration:none"><button class="ghost" type="button">预览简历</button></a>
+        <span class="spacer"></span>
+        <span class="note" id="lastRun"></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROFILE -->
+  <section class="view" id="view-profile">
+    <div class="card" style="border-color:#2563eb">
+      <h2>🪄 一键解析简历（推荐）</h2>
+      <div class="note">把你的简历全文粘贴到下面，点「解析并填入」，系统用 AI 自动抽取姓名/技能/经历等结构化档案，免去手填。解析后请核对再点「保存资料」。</div>
+      <textarea id="p_paste" style="min-height:120px" placeholder="在此粘贴简历文本（或一段个人介绍）…"></textarea>
+      <div class="row" style="margin-top:8px">
+        <button id="btnParseResume" type="button">解析并填入表单</button>
+        <span class="spacer"></span><span class="note" id="parseMsg"></span>
+      </div>
+    </div>
+    <div class="card">
+      <h2>个人资料（用于匹配与生成求职信）</h2>
+      <div class="grid cols-2">
+        <div><label>姓名</label><input id="p_name"></div>
+        <div><label>目标职位</label><input id="p_title"></div>
+        <div><label>邮箱</label><input id="p_email"></div>
+        <div><label>电话</label><input id="p_phone"></div>
+        <div><label>期望城市</label><input id="p_location"></div>
+        <div><label>工作年限</label><input id="p_years" type="number"></div>
+        <div><label>期望薪资下限 (¥/月)</label><input id="p_smin" type="number"></div>
+        <div><label>期望薪资上限 (¥/月)</label><input id="p_smax" type="number"></div>
+      </div>
+      <label>技能标签（逗号分隔）</label><input id="p_skills" placeholder="Python, Go, Kubernetes, React ...">
+      <label>个人简介</label><textarea id="p_summary"></textarea>
+      <label>完整简历 HTML（可选，留空则用自动模板）</label><textarea id="p_resume" placeholder="可粘贴完整简历 HTML；预览会渲染它"></textarea>
+
+      <h2 style="margin-top:18px">📋 结构化履历（用于按岗位定制简历 / 过初筛）</h2>
+      <div class="note">填写学历、工作经历、项目、证书等。系统会按每个岗位自动重排、突出匹配项。下方填 JSON：</div>
+      <div class="row" style="margin:6px 0">
+        <button class="ghost" id="btnExampleData" type="button">填入示例结构</button>
+        <span class="spacer"></span><span class="note">字段：educations / experiences / projects / certifications / languages / links</span>
+      </div>
+      <textarea id="p_resume_data" style="min-height:200px;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:12px" placeholder='{"educations":[{"school":"","degree":"","major":"","start":"","end":""}],"experiences":[{"company":"","title":"","start":"","end":"","bullets":[""]}],"projects":[{"name":"","role":"","bullets":[""]}],"certifications":[],"languages":[],"links":{}}'></textarea>
+
+      <div class="row" style="margin-top:14px">
+        <button id="btnSaveProfile">保存资料</button>
+        <button class="ghost" id="btnPreview">预览简历</button>
+        <span class="spacer"></span><span class="note" id="profileMsg"></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- JOBS -->
+  <section class="view" id="view-jobs">
+    <div class="card">
+      <div class="row">
+        <h2 style="margin:0">职位库</h2>
+        <span class="spacer"></span>
+        <button id="btnRefresh2">拉取职位</button>
+        <button id="btnMatch2">匹配评分</button>
+      </div>
+      <div id="jobsTable"></div>
+    </div>
+  </section>
+
+  <!-- QUEUE -->
+  <section class="view" id="view-queue">
+    <div class="card" style="border-color:#2563eb">
+      <div class="row">
+        <h2 style="margin:0">⚡ 智能投递台</h2>
+        <span class="spacer"></span>
+        <button id="btnSmartDraft" type="button">🚀 一键匹配+生成全部</button>
+      </div>
+      <div class="note">点一下即对所有职位自动匹配、按岗位定制简历并生成草稿，无需逐岗操作。</div>
+      <div class="row" style="margin-top:8px">
+        <button id="btnApproveAll" type="button">✅ 批准全部（匹配度≥</button>
+        <input id="qMinScore" type="number" value="60" style="width:70px">
+        <span>）</span>
+        <button class="ghost" id="btnApproveSelected" type="button">批准勾选</button>
+        <input type="checkbox" id="qSelectAll" style="width:auto;margin-left:8px"><label for="qSelectAll" style="margin:0">全选</label>
+        <span class="spacer"></span><span class="note" id="queueMsg"></span>
+      </div>
+    </div>
+    <div class="card">
+      <div class="row">
+        <h2 style="margin:0">待投递（匹配 / 草稿 / 已批准）</h2>
+        <span class="spacer"></span>
+        <select id="qFilter">
+          <option value="">全部状态</option>
+          <option value="matched">matched</option>
+          <option value="drafted">drafted</option>
+          <option value="approved">approved</option>
+        </select>
+      </div>
+      <div id="queueList"></div>
+    </div>
+  </section>
+
+  <!-- SENT -->
+  <section class="view" id="view-sent">
+    <div class="card">
+      <h2>已发送 / 历史</h2>
+      <div id="sentList"></div>
+    </div>
+  </section>
+
+  <!-- SETTINGS -->
+  <section class="view" id="view-settings">
+    <div class="card">
+      <h2>调度</h2>
+      <div class="grid cols-2">
+        <div><label>自动拉取间隔（分钟）</label><input id="s_interval" type="number"></div>
+        <div><label>最低匹配分（低于则仅记录）</label><input id="s_minscore" type="number"></div>
+      </div>
+      <label><input type="checkbox" id="s_autodraft" style="width:auto;margin-right:6px">匹配后自动生成求职信草稿</label>
+    </div>
+    <div class="card">
+      <h2>邮件投递（SMTP）</h2>
+      <div class="row"><label style="margin:0"><input type="checkbox" id="smtp_on" style="width:auto;margin-right:6px">启用邮件投递</label></div>
+      <div class="grid cols-2">
+        <div><label>SMTP 主机</label><input id="smtp_host"></div>
+        <div><label>端口</label><input id="smtp_port" type="number"></div>
+        <div><label>用户名</label><input id="smtp_user"></div>
+        <div><label>密码 / 授权码</label><input id="smtp_pass" type="password"></div>
+        <div><label>发件人名称</label><input id="smtp_name"></div>
+        <div><label>发件人地址</label><input id="smtp_from"></div>
+      </div>
+      <label><input type="checkbox" id="smtp_tls" style="width:auto;margin-right:6px">使用 SSL/TLS (如 465)</label>
+    </div>
+    <div class="card">
+      <h2>LLM 增强（可选）</h2>
+      <div class="row"><label style="margin:0"><input type="checkbox" id="llm_on" style="width:auto;margin-right:6px">启用 LLM 生成更个性化的求职信 / 简历 / 回复</label></div>
+      <div class="grid cols-2">
+        <div><label>模型供应商</label>
+          <select id="llm_provider"></select>
+        </div>
+        <div><label>模型</label>
+          <select id="llm_model"></select>
+        </div>
+        <div><label>API Base URL <span class="note" id="llm_base_hint"></span></label><input id="llm_base"></div>
+        <div><label>API Key</label><input id="llm_key" type="password" placeholder=""></div>
+      </div>
+      <div class="row" style="margin-top:8px">
+        <button id="btnTestLLM" type="button">测试连接</button>
+        <span class="spacer"></span><span class="note" id="llmTestMsg"></span>
+      </div>
+      <div class="note" id="llm_doc" style="margin-top:6px"></div>
+    </div>
+    <div class="card">
+      <h2>沟通助手（BOSS 直聘等）</h2>
+      <div class="row"><label style="margin:0"><input type="checkbox" id="chat_assist" style="width:auto;margin-right:6px">辅助自动回复（仍需本人在浏览器扩展中确认发送）</label></div>
+      <div class="note">开启后，收到 HR 消息会自动拟好回复草稿；但你仍需在 BOSS 直聘页面用扩展点「发送」。绝不做无人值守冒充。</div>
+    </div>
+    <div class="card">
+      <h2>安全策略</h2>
+      <label><input type="checkbox" id="safe_approve" style="width:auto;margin-right:6px">要求人工批准后才发送</label>
+      <div><label>每小时最多发送数</label><input id="safe_rate" type="number"></div>
+    </div>
+    <div class="row" style="margin-top:8px">
+      <button id="btnSaveSettings">保存设置</button>
+      <span class="spacer"></span><span class="note" id="settingsMsg"></span>
+    </div>
+  </section>
+</main>
+
+  <!-- CHAT -->
+  <section class="view" id="view-chat">
+    <div class="chat-layout">
+      <div class="chat-list">
+        <div class="row" style="margin-bottom:8px">
+          <h2 style="margin:0">沟通会话</h2>
+          <span class="spacer"></span>
+          <button class="ghost" id="btnSimConv" type="button">+ 模拟会话</button>
+        </div>
+        <div class="note" id="chatBridge">桥接：安装 BOSS 直聘扩展后，HR 消息会自动进来处理。</div>
+        <div id="convList"></div>
+      </div>
+      <div class="chat-main" id="chatMain">
+        <div class="note" style="padding:20px">从左侧选择一个会话，或点「模拟会话」体验自动拟回复。</div>
+      </div>
+    </div>
+  </section>
+
+<div id="modal" class="modal" style="display:none">
+  <div class="modal-box">
+    <div class="row"><h2 style="margin:0">📝 投递表单填充建议</h2><span class="spacer"></span><button class="ghost" id="modalClose" type="button">关闭</button></div>
+    <div id="modalBody" style="margin-top:10px"></div>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+<script src="/static/app.js"></script>
+</body>
+</html>

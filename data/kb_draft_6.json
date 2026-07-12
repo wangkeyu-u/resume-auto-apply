@@ -1,0 +1,230 @@
+[
+  {
+    "role": "qa",
+    "label": "测试开发工程师 / QA",
+    "aliases": ["测试", "QA", "自动化测试", "测试开发"],
+    "must_have": [
+      "Python 或 Java 至少精通一门，能独立编写自动化脚本与测试工具",
+      "UI 自动化框架：Selenium / Playwright / Appium，理解 PO 模式与设计思想",
+      "单元测试框架：pytest / JUnit，接口自动化（HTTP / gRPC / WebSocket，requests / MeterSphere / Apifox）",
+      "CI/CD 集成：Jenkins / GitLab CI，质量门禁设计与自动化深度融入研发交付",
+      "性能测试：JMeter / Locust / LoadRunner 压测与瓶颈分析",
+      "数据库：MySQL / PostgreSQL 复杂 SQL 编写与数据校验",
+      "Linux 与 Shell 脚本、Docker 容器化部署",
+      "测试框架深度定制与分层回归、快速质量反馈机制建设"
+    ],
+    "nice_to_have": [
+      "AI 辅助测试：Cursor / Copilot 融入日常，Prompt Engineering 生成用例",
+      "测试平台与效能工具研发（用例管理 / 数据工厂 / 执行调度，TaaS）",
+      "安全测试集成：OWASP ZAP / Burp Suite、SonarQube 代码质量、Allure 报告",
+      "流量回放、Mock 服务（Moco / WireMock）、监控（Prometheus）",
+      "前端（HTML/JS/CSS）与后端（Spring Boot / Flask）基础，能代码层定位问题"
+    ],
+    "keywords": [
+      "自动化测试", "pytest", "Selenium", "接口测试", "CI/CD", "性能测试",
+      "Appium", "测试框架", "质量门禁", "JMeter", "Docker", "测开",
+      "Playwright", "测试左移", "QAOps"
+    ],
+    "responsibilities": [
+      "设计与落地覆盖 Web / 移动端 / API 的全栈自动化测试方案，主导统一测试框架与 CI/CD 深度集成",
+      "研发测试平台与效能工具，推进测试能力服务化（TaaS）与测试左移右移",
+      "建设研发效能与质量度量体系，以数据驱动流程改进与发布稳定性"
+    ],
+    "soft_skills": [
+      "沟通协作与跨团队（开发 / 产品）推进能力",
+      "优秀的问题分析与定位能力",
+      "技术文档撰写与内部培训能力"
+    ],
+    "salary_band": "15k-35k/月（一线，高级/资深年薪 30万-50万+）"
+  },
+  {
+    "role": "security",
+    "label": "安全工程师",
+    "aliases": ["安全", "信息安全", "渗透", "安全合规"],
+    "must_have": [
+      "渗透测试：熟练使用 Burp Suite / Nmap / Metasploit，独立完成内外网渗透",
+      "代码审计：Java Web 审计、OWASP Top 10 漏洞原理与缓解措施",
+      "漏洞挖掘与 SRC / CTF 实战经验，能编写 POC / 利用脚本",
+      "逆向分析：脱壳、反编译、抓包、行为分析",
+      "安全合规：等保 2.0 / ISO27001 / GDPR 解读与差距分析",
+      "至少掌握一门语言（Python / Go / Java），能独立开发安全工具模块",
+      "SDL 安全开发生命周期、安全评估加固与应急响应",
+      "基础扎实：数据结构、操作系统、数据库、网络、算法"
+    ],
+    "nice_to_have": [
+      "SRC 排名靠前白帽子、CTF 战队经历",
+      "参与或维护 GitHub 安全开源项目",
+      "HW 行动 / 红蓝对抗 / 国家级攻防演练经验",
+      "密码学、二进制安全、恶意代码分析",
+      "AI 安全、隐私计算与数据安全治理"
+    ],
+    "keywords": [
+      "渗透测试", "代码审计", "逆向", "安全合规", "漏洞挖掘", "等保",
+      "应急响应", "SDL", "Burp Suite", "CTF", "SRC", "OWASP",
+      "红队", "数据安全", "代码安全"
+    ],
+    "responsibilities": [
+      "负责产品 / 系统的安全测试、渗透与漏洞修复推进考核",
+      "开展安全风险评估、合规差距分析与审计支持，制定安全基线",
+      "制定优化安全规章制度与流程，负责安全意识培训与监管对接"
+    ],
+    "soft_skills": [
+      "对新技术强烈的求知欲与自驱力",
+      "良好的沟通协调能力（对接客户 / 监管机构）",
+      "职业操守强、责任心重"
+    ],
+    "salary_band": "15k-40k/月（一线，红队 / 资深 40k-80k，CISO 级更高）"
+  },
+  {
+    "role": "blockchain",
+    "label": "区块链开发工程师",
+    "aliases": ["区块链", "web3", "智能合约"],
+    "must_have": [
+      "Solidity / Vyper 智能合约独立开发、部署、审计与优化",
+      "Go / Java / C++ 至少精通一门（Rust 加分），工程实现能力强",
+      "Web3.js / Ethers.js 及 Hardhat / Foundry / Truffle 开发工具链",
+      "熟悉以太坊 EVM / Polygon / BSC / Hyperledger Fabric 等至少一个生态",
+      "理解共识机制：PoW / PoS / DPoS / PBFT / Raft",
+      "密码学原理：哈希、签名、零知识证明、同态加密",
+      "Linux / Docker / K8s 部署与云平台运维",
+      "存储：MySQL / PostgreSQL / Redis / MongoDB，分布式系统基础"
+    ],
+    "nice_to_have": [
+      "合约安全审计（Slither / Mythril）与第三方安全审计配合经验",
+      "DeFi / NFT / 跨链 / Layer2 实际项目经验",
+      "Rust / Move 系统级编程（Solana / Aptos / Sui）",
+      "开源贡献、审计竞赛（Code4rena / Sherlock）排名",
+      "隐私计算、PQC 抗量子密码学背景"
+    ],
+    "keywords": [
+      "Solidity", "智能合约", "Web3", "以太坊", "Hardhat", "Foundry",
+      "共识算法", "密码学", "跨链", "Layer2", "Go", "Rust",
+      "Ethers.js", "DeFi", "Gas优化"
+    ],
+    "responsibilities": [
+      "智能合约的设计 / 开发 / 部署 / 审计与性能（Gas）优化",
+      "区块链底层（公链 / 联盟链）核心模块开发：共识、P2P、加密、账本存储",
+      "链上 / 链下系统架构设计，优化吞吐量、跨链交互与节点同步"
+    ],
+    "soft_skills": [
+      "工程严谨性与安全优先意识",
+      "英文读写能力（跟踪 EIP 提案与技术标准的国际前沿）",
+      "跨职能团队协作（产品 / 前端 / 测试 / 运维）"
+    ],
+    "salary_band": "18k-35k/月（一线，资深 / 架构师 30k+）"
+  },
+  {
+    "role": "quant",
+    "label": "量化开发工程师",
+    "aliases": ["量化", "quant", "量化交易"],
+    "must_have": [
+      "Python / C++17-20（模板、并发、SIMD），代码规范且工程实现强",
+      "Linux 系统、网络编程与多线程编程，低延迟高并发系统处理能力",
+      "量化策略回测框架搭建与因子开发、机器学习模型部署",
+      "行情 / 交易数据管线治理，数据可用性与一致性保障",
+      "扎实的数据结构、算法与操作系统原理，能定位优化性能瓶颈",
+      "股票 / 期货实盘或模拟交易系统开发经验",
+      "数学 / 统计 / 物理基础，金融工程与风控逻辑理解",
+      "Git 版本管理与良好的文档撰写能力"
+    ],
+    "nice_to_have": [
+      "Rust / Go 开发经验",
+      "FPGA / 极低延迟技术栈、高频撮合与行情链路优化",
+      "CUDA / GPU 与深度学习在量化中的实际应用",
+      "分布式计算 / 存储 / 数据库系统研发经验",
+      "ACM-ICPC / NOI / 数模竞赛奖项，顶级会议论文"
+    ],
+    "keywords": [
+      "Python", "C++", "策略回测", "低延迟", "因子挖掘", "量化交易",
+      "Linux", "机器学习", "Rust", "高频交易", "分布式", "风控",
+      "Rust", "FPGA", "CUDA"
+    ],
+    "responsibilities": [
+      "将研究员提供的量化模型 / 策略原型转化为可回测、可部署的生产级代码",
+      "构建回测平台与稳定高吞吐的行情 / 交易数据处理管线",
+      "优化执行引擎性能、降低延迟并提高撮合效率，落地交易风控逻辑"
+    ],
+    "soft_skills": [
+      "自我驱动与快速学习新知识的能力",
+      "强逻辑思维与系统性问题拆解能力",
+      "能适应高压、高频、快速迭代的工作节奏"
+    ],
+    "salary_band": "25k-60k/月（一线，资深 / Leader 50k-80k+，头部机构百万年薪+）"
+  },
+  {
+    "role": "prompt",
+    "label": "提示词工程师 / AI 应用工程师",
+    "aliases": ["提示词", "Prompt", "AI应用", "Agent"],
+    "must_have": [
+      "Prompt Engineering：掌握 Few-shot / Chain-of-Thought / ReAct 等提示范式",
+      "熟悉主流大模型（GPT / Claude / Gemini / DeepSeek / 文心一言 / 通义千问）特性与选型",
+      "RAG 技术实现流程，熟悉 LangChain / LlamaIndex 框架",
+      "Python 编程与良好的工程实现能力",
+      "向量数据库实战：FAISS / Qdrant / Milvus / Pinecone",
+      "Agent 架构与框架：LangGraph / AutoGen / CrewAI",
+      "Function Calling / Tool Use / Memory 机制理解与应用",
+      "了解模型微调方法：PEFT / LoRA / QLoRA / Prompt Tuning"
+    ],
+    "nice_to_have": [
+      "多 Agent 协作与工作流编排经验",
+      "模型部署：Docker / Kubernetes / vLLM / 本地模型推理优化",
+      "业务理解与产品思维，能拆解复杂业务为多步 Agent 流程",
+      "多模型对比选型与复杂业务流程 Prompt 编排",
+      "AI 产品落地或企业知识库项目经验"
+    ],
+    "keywords": [
+      "Prompt Engineering", "LLM", "RAG", "LangChain", "Agent", "向量数据库",
+      "Function Calling", "LoRA", "大模型", "微调", "多轮对话", "知识库",
+      "LangGraph", "Tool Use"
+    ],
+    "responsibilities": [
+      "设计与优化提示词及 Agent 工作流，提升模型在具体场景的表现与稳定性",
+      "搭建 RAG 与企业知识库，构建智能体对外部工具的智能调度",
+      "参与模型微调 / 推理优化，建立 Agent 评估体系提升准确率"
+    ],
+    "soft_skills": [
+      "逻辑清晰、对语言与表达敏感",
+      "业务 / 产品理解能力，处于技术与产品交叉口",
+      "跨团队（后端 / 产品）协作能力"
+    ],
+    "salary_band": "15k-40k/月（一线，资深 35k-60k，AI 创业公司可含期权）"
+  },
+  {
+    "role": "embedded",
+    "label": "嵌入式开发工程师",
+    "aliases": ["嵌入式", "单片机", "RTOS", "驱动"],
+    "must_have": [
+      "C 语言精通（指针 / 位操作 / volatile / 内存模型），C++ / Python / Shell 辅助",
+      "MCU 开发：STM32 / ESP32 / NXP / GD32 / RISC-V 等 Cortex-M 架构",
+      "RTOS：FreeRTOS / RT-Thread / Zephyr / µC/OS 任务调度与 IPC",
+      "外设驱动：GPIO / UART / I2C / SPI / CAN / ADC / PWM / DMA / 定时器",
+      "嵌入式 Linux 驱动开发、U-Boot 移植、设备树、Yocto / Buildroot 根文件系统",
+      "通信协议：板级 UART/I2C/SPI，现场总线 CAN/Modbus，网络 TCP/IP / MQTT / HTTP",
+      "调试工具：J-Link / ST-Link / GDB / 示波器 / 逻辑分析仪",
+      "代码规范、软硬件联调与版本管理（Git）"
+    ],
+    "nice_to_have": [
+      "车规 Autosar / ISO 26262 功能安全标准",
+      "边缘 AI 部署：TFLite-Micro / TinyML",
+      "RISC-V 生态、LVGL 图形界面",
+      "OTA / Bootloader 开发、与云平台 MQTT 通信",
+      "PCB / 硬件基础（AD / Cadence），新能源 / 电力电子协议（OCPP / IEC61850）"
+    ],
+    "keywords": [
+      "嵌入式", "C/C++", "单片机", "RTOS", "驱动开发", "Linux", "STM32",
+      "物联网", "通信协议", "调试", "固件", "嵌入式Linux",
+      "FreeRTOS", "CAN", "MQTT"
+    ],
+    "responsibilities": [
+      "MCU 固件 / RTOS 与嵌入式 Linux 驱动的设计、开发与维护",
+      "软硬件联调，定位时序违例、中断抖动等深层 Bug",
+      "低功耗 / 性能（启动时间、内存）优化，编写规范代码与技术文档"
+    ],
+    "soft_skills": [
+      "独立分析、定位与解决问题的能力",
+      "动手能力强，能与硬件工程师高效协作",
+      "良好的代码规范与文档习惯"
+    ],
+    "salary_band": "10k-30k/月（一线，资深 / 新能源方向 15k-30k+）"
+  }
+]
