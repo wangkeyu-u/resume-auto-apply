@@ -1,3 +1,35 @@
+# 简历自动投递助手 / Resume Auto-Apply Assistant
+
+> 本地运行的求职自动化助手 —— 聚合职位、智能匹配、生成求职信、构建投递队列、批量投递（人工确认）、HR 沟通助手、数据看板。基于 44 类岗位知识库的 RAG 匹配引擎。纯本地运行，安全门控，不代点发送。
+>
+> A locally-run job search automation assistant — job aggregation, smart matching, cover letter generation, application queue, batch sending (human-confirmed), HR chat assistant, data dashboard. RAG matching engine built on a 44-category job knowledge base. Pure local, safety-gated, never auto-clicks send.
+
+[![Python](https://img.shields.io/badge/Python-3.12-blue)](https://www.python.org/)
+[![FastAPI](https://img.shields.io/badge/Backend-FastAPI-009688)](https://fastapi.tiangolo.com/)
+[![Frontend](https://img.shields.io/badge/Frontend-Vanilla%20JS-F7DF1E)]()
+[![Extension](https://img.shields.io/badge/Browser%20Extension-Chrome%2FEdge-4285F4)]()
+[![Local First](https://img.shields.io/badge/Local%20First-Privacy-success)]()
+
+---
+
+## Overview (English)
+
+A locally-run personal assistant that automates the automatable parts of job hunting while keeping the "actually send" step under your confirmation — avoiding platform ToS violations and protecting your account.
+
+**What it automates (full pipeline):**
+1. **Job aggregation** — pulls from configured sources (built-in samples / RSS / custom HTTP JSON); one-click capture of real BOSS/Liepin job postings via browser extension
+2. **Smart matching** — explainable 0–100 scoring (skill overlap, job relevance, location, salary, experience) powered by a 44-category structured job knowledge base (RAG, not fine-tuning)
+3. **Cover letter generation** — auto-generates Chinese cover letters; optional LLM-enhanced versions
+4. **Application queue** — status flow: `new → matched → drafted → approved → sent`
+5. **Batch sending (human-confirmed)** — email via SMTP, but every send requires your click; hourly rate limits
+6. **HR chat assistant** — recognizes intent (salary/experience/resume/arrival/interview), drafts role-specific replies; you approve, extension fills the text, **you click send**
+7. **Dashboard** — application funnel, send rate, interview rate, HR reply rate, Kanban board
+8. **Blacklist & follow-up** — auto-skip blacklisted companies; detect "read but no reply" and generate polite follow-ups
+
+**Key design principle:** The system automates "what to say and how to fit the role" but **never auto-clicks send**. Browser extension only reads messages and fills text — the final send is always your manual click.
+
+---
+
 # 简历自动投递助手 (Resume Auto-Apply Assistant)
 
 一个**本地运行**的个人信息助手，把求职流程中「可自动化」的环节全自动跑起来，同时把「真正投递」这一步留给你的确认，避免违反招聘平台服务条款、保护账号安全。
